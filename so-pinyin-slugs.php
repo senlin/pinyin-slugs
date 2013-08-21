@@ -99,6 +99,10 @@ class PinyinSlug_Load {
 	 * @since 0.1
 	 */
 	function includes() {
+	
+		/* Load Chinese character dictionary */
+		global $dictPinyin;
+		$dictPinyin = require_once( SO_PINYINSLUGS_INCLUDES . 'dictionary.php' );
 
 		/* Load the plugin functions file. */
 		require_once( SO_PINYINSLUGS_INCLUDES . 'functions.php' );

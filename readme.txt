@@ -78,6 +78,7 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 * separate dictionary.php file
 * add Mandarin Chinese language files
 * edit readme.txt and readme.md
+* fix textdomain issue
 
 = 0.1 =
 * First stable release

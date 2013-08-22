@@ -86,6 +86,7 @@ This repo is open to _any_ kind of contributions.
 * separate dictionary.php file
 * add Mandarin Chinese language files
 * edit readme.txt and readme.md
+* fix textdomain issue
 
 = 0.1 =
 

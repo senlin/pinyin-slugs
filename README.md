@@ -81,6 +81,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+= next version =
+
+* add Dutch language files
+
 = 0.1.1 =
 
 * separate dictionary.php file

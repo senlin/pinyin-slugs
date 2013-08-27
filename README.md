@@ -21,6 +21,12 @@ Search engines such as [Baidu](http://www.baidu.com) obviously cannot make much 
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option SO Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
+## WPML Compatible
+
+The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](http://wpml.org/plugin/so-pinyin-slugs/).
+
+![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")
+
 ## Installation
 
 Quick installation: [Install now](http://coveredwebservices.com/wp-plugin-install/?plugin=so-pinyin-slugs) !

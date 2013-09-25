@@ -42,7 +42,7 @@ function getPinyinSlug( $strTitle ) {
 			}
 		} else {
 			//non chinese characters will be ignored
-			$strRet .= preg_replace( "/[^A-Za-z0-9\-]/", chr( $byte1st ) );
+			$strRet .= preg_replace( "/[^A-Za-z0-9\-]/", '', chr( $byte1st ) );
 		}
 	}
 

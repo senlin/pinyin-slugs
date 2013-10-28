@@ -60,7 +60,7 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 ### I have an issue with this plugin, where can I get support?
 
-Please open an issue here on [Github](https://github.com/senlin/so-pinyin-slugs/issues)
+Please open an issue here on [Github](https://github.com/so-wp/so-pinyin-slugs/issues)
 
 ## Contributions
 

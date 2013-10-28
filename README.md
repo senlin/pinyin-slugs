@@ -1,8 +1,8 @@
 # SO Pinyin Slugs
 
-###### Version 0.1.1
+###### Version 0.1.2-beta
 ###### requires at least WordPress 3.5.2
-###### tested up to 3.6
+###### tested up to 3.7
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 
 WordPress plugin that transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
@@ -87,8 +87,10 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-= next version =
+= 0.1.2-beta =
 
+* redo version check
+* change Github link
 * add Dutch language files
 * add WPML accreditation
 

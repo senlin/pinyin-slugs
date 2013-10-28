@@ -64,7 +64,7 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 = I have an issue with this plugin, where can I get support? =
 
-Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
+Please open an issue over at [Github](https://github.com/so-wp/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
 
 == Screenshots ==
 

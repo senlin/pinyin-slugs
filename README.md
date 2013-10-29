@@ -1,7 +1,7 @@
 # SO Pinyin Slugs
 
-###### Version 0.1.2-beta
-###### requires at least WordPress 3.5.2
+###### Version 0.1.2
+###### requires at least WordPress 3.6
 ###### tested up to 3.7
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 
@@ -87,7 +87,7 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-= 0.1.2-beta =
+= 0.1.2 =
 
 * redo version check
 * change Github link

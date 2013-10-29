@@ -1,9 +1,9 @@
 === SO Pinyin Slugs ===
 Contributor: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
-Requires at least: 3.5.2
-Tested up to: 3.6
-Stable tag: 0.1.1
+Requires at least: 3.6
+Tested up to: 3.7
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,12 +66,27 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 Please open an issue over at [Github](https://github.com/so-wp/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
 
+== Other Notes ==
+
+= WPML Compatible =
+
+The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](http://wpml.org/plugin/so-pinyin-slugs/).
+
 == Screenshots ==
 
 1. Settings page
 2. New Post with title in Chinese characters and auto-generated pinyin slug; Baidu Search Results page underneath
+3. WPML Compatible
 
 == Changelog ==
+
+= 0.1.2 =
+
+* compatible up to WordPress 3.7 
+* redo version check, min. requirement WordPress 3.6
+* change Github link
+* add Dutch language files
+* add WPML accreditation
 
 = 0.1.1 =
 

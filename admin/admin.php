@@ -107,7 +107,7 @@ function setPinyinSlugOptions() {
 				<?php 
 	
 					echo '<p>'; printf( __( 'I will only support this plugin through %s. Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.<br /><br /><strong>PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS</strong><br /><br />Thank you for your understanding and cooperation.', 'pinyinslugs' ),
-						'<strong><a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs/issues' ) . '" title="' . esc_attr__( 'Support via Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a></strong>'
+						'<strong><a href="' . esc_url( 'https://github.com/so-wp/so-pinyin-slugs/issues' ) . '" title="' . esc_attr__( 'Support via Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a></strong>'
 					); echo '</p>';
 					
 					?>
@@ -118,25 +118,24 @@ function setPinyinSlugOptions() {
 	
 		<div id="about-pinyinslugs" class="postbox" style="margin:30px 10px 10px 0;">
 	
-			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'About the Developer: Piet Bos', 'pinyinslugs' ); ?></span></h3>
+			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'About the Author', 'pinyinslugs' ); ?></span></h3>
 	
 			<div class="inside">
-	
-				<img src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" style="float:left;margin-right:10px;padding:3px;border:1px solid #dfdfdf;"/>
-				<p style="min-height:70px;padding-top:10px">
-					
-					<?php _e( 'Piet has been developing websites since 2005 and working with WordPress since 2006. SO Pinyin Slugs is Piet\'s 5th plugin. You can find out more information about him via the following links:', 'pinyinslugs' ); ?>
-				
+				<img src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" style="float: left; margin-right: 10px; padding: 3px; border: 1px solid #DFDFDF;"/>
+				<p style="height: 60px; padding-top: 20px">
+					<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'pinyinslugs' ),
+					esc_url( 'http://so-wp.github.io/' )
+					); ?>
 				</p>
 				
-				<ul style="clear:both; margin-top: 20px;">
-					<li><a href="http://senlinonline.com/" title="Senlin Online"><?php _e( 'Senlin Online, WordPress Consulting &amp; Coding and WPML specialist', 'pinyinslugs' ); ?></a></li>
-					<li><a href="http://wpti.ps/" title="WP TIPS"><?php _e( 'WP Tips', 'pinyinslugs' ); ?></a></li>
-					<li><a href="https://plus.google.com/108543145122756748887" title="Google+"><?php _e( 'Google+', 'pinyinslugs' ); ?></a></li>
-					<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn"><?php _e( 'LinkedIn Profile', 'pinyinslugs' ); ?></a></li>
-					<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter', 'pinyinslugs' ); ?></a></li>
-					<li><a href="http://profiles.wordpress.org/senlin/" title="WordPress.org"><?php _e( 'WordPress.org Profile', 'pinyinslugs' ); ?></a></li>
-					<li><a href="http://github.com/senlin" title="Github"><?php _e( 'Github Profile', 'pinyinslugs' ); ?></a></li>
+				<ul style="clear: both; margin-top: 20px;">
+					<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'pinyinslugs'); ?></a></li>
+					<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'dbfw'); ?></a></li>
+					<li><a href="https://plus.google.com/108543145122756748887" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'pinyinslugs' ); ?></a></li>
+					<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'pinyinslugs' ); ?></a></li>
+					<li><a href="http://twitter.com/SenlinOnline" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'pinyinslugs' ); ?></a></li>
+					<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'pinyinslugs' ); ?></a></li>
+					<li><a href="http://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'pinyinslugs' ); ?></a></li>
 				</ul>
 			
 			</div> <!-- end .inside -->

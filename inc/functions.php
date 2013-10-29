@@ -1,8 +1,9 @@
 <?php
  /**
-  * the Dictionary; without it, there is no plugin.
-  *
-  * copied from Pinyin Permalinks
+  * Main function of the plugin
+  * 
+  * Checks whether title contains Chinese characters
+  * and return the slug in Pinyin when true
   *
   * since version 0.1
   */

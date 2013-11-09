@@ -1,6 +1,6 @@
 # SO Pinyin Slugs
 
-###### Version 0.1.2
+###### Version 0.1.3
 ###### requires at least WordPress 3.6
 ###### tested up to 3.7
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
@@ -87,21 +87,25 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-= 0.1.2 =
+### 0.1.3
+
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el) 
+
+### 0.1.2
 
 * redo version check
 * change Github link
 * add Dutch language files
 * add WPML accreditation
 
-= 0.1.1 =
+### 0.1.1
 
 * separate dictionary.php file
 * add Mandarin Chinese language files
 * edit readme.txt and readme.md
 * fix textdomain issue
 
-= 0.1 =
+### 0.1
 
 * First stable release
 

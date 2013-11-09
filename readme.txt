@@ -3,7 +3,7 @@ Contributor: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 3.6
 Tested up to: 3.7
-Stable tag: 0.1.2
+Stable tag: 0.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,10 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 0.1.3 =
+
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el) 
 
 = 0.1.2 =
 

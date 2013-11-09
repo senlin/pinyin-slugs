@@ -4,8 +4,10 @@ Plugin Name: SO Pinyin Slugs
 Plugin URI: https://github.com/so-wp/so-pinyin-slugs
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Authors: Piet Bos & Denis Cao
-Version: 0.1.2
+Version: 0.1.3
 Author URI: http://senlinonline.com
+Text Domain: so-pinyin-slugs
+Domain Path: /languages
 */
 
 /**
@@ -60,7 +62,7 @@ function pinyinslugs_check_admin_notices()
 	// this plugin's name
 	$name = get_file_data( __FILE__, array ( 'Plugin Name' ), 'plugin' );
 
-	printf( __( '<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>', 'pinyinslugs' ),
+	printf( __( '<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>', 'so-pinyin-slugs' ),
 		join( '</p><p>', $errors ),
 		$name[0]
 	);
@@ -127,7 +129,7 @@ class PinyinSlug_Load {
 	function i18n() {
 
 		/* Load the translation of the plugin. */
-		load_plugin_textdomain( 'pinyinslugs', false, basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'so-pinyin-slugs', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**

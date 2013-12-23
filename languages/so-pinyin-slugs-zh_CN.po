@@ -4,9 +4,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: SO Pinyin Slugs WordPress Plugin\n"
 "POT-Creation-Date: 2013-08-21 23:30+0800\n"
-"PO-Revision-Date: 2013-11-10 00:38+0830\n"
+"PO-Revision-Date: 2013-11-10 00:38+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
-"Language-Team: \n"
+"Language-Team: Simplified Chinese\n"
 "MIME-Version: 1.0\n"
 
 # $exit_msg=__( 'It looks like your WordPress install needs to be updated, please do that first.', 'pinyinslugs' );

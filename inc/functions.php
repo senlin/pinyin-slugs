@@ -5,7 +5,7 @@
   * Checks whether title contains Chinese characters
   * and return the slug in Pinyin when true
   *
-  * since version 0.1
+  * since version 2.0.0
   */
 
 function getPinyinSlug( $strTitle ) {

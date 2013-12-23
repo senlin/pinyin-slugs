@@ -105,7 +105,7 @@ class PinyinSlug_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SO_PINYINSLUGS_VERSION', '0.1.1' );
+		define( 'SO_PINYINSLUGS_VERSION', '0.1.3' );
 
 		/* Set constant path to the so-pinyin-slugs plugin directory. */
 		define( 'SO_PINYINSLUGS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

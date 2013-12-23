@@ -2,8 +2,10 @@
 
 ###### Version 0.1.3
 ###### requires at least WordPress 3.6
-###### tested up to 3.7
+###### tested up to 3.8
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
+###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
+###### [Plugin homepage](http://so-wp.com/plugin/so-pinyin-slugs)
 
 WordPress plugin that transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 
@@ -27,26 +29,6 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 
 ![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")
 
-## Installation
-
-Quick installation: [Install now](http://coveredwebservices.com/wp-plugin-install/?plugin=so-pinyin-slugs) !
-
- &hellip; OR &hellip;
-
-Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "so pinyin slugs" and install it.
-
- &hellip; OR &hellip;
-
-Follow these steps:
-
- 1. Download zip file.
-
- 2. Upload the zip file via the Plugins > Add New > Upload page &hellip; OR &hellip; unpack and upload with your favourite FTP client to the /plugins/ folder.
-
- 3. Activate the plugin on the Plug-ins page.
-
-Done!
-
 ## Frequently Asked Questions
 
 ### Known Issues:
@@ -60,7 +42,7 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 ### I have an issue with this plugin, where can I get support?
 
-Please open an issue here on [Github](https://github.com/so-wp/so-pinyin-slugs/issues)
+Please open an issue here on [Github](https://github.com/senlin/so-pinyin-slugs/issues)
 
 ## Contributions
 
@@ -79,13 +61,19 @@ This repo is open to _any_ kind of contributions.
 
 [Github](https://github.com/senlin) 
 
-[Google+](http://plus.google.com/u/0/108543145122756748887) 
+[Google+](http://plus.google.com/+PietBos) 
 
 [WordPress](http://profiles.wordpress.org/senlin/) 
 
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### next version
+
+* tested up to WP 3.8.1
+* change version number format
+* 
 
 ### 0.1.3
 

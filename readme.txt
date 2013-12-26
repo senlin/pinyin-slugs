@@ -1,9 +1,9 @@
 === SO Pinyin Slugs ===
-Contributor: senlin
+Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 3.6
-Tested up to: 3.7
-Stable tag: 0.1.3
+Tested up to: 3.8
+Stable tag: 2013.12.26
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ Search engines such as [Baidu](http://www.baidu.com) obviously cannot make much 
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option SO Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
-I have decided to only support this plugin through [Github](https://github.com/so-wp/so-pinyin-slugs/issues). Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.
+I have decided to only support this plugin through [Github](https://github.com/senlin/so-pinyin-slugs/issues). Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.
 
 **PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS**
 
@@ -64,7 +64,7 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 = I have an issue with this plugin, where can I get support? =
 
-Please open an issue over at [Github](https://github.com/so-wp/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
+Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
 
 == Other Notes ==
 
@@ -79,6 +79,13 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 2013.12.26 =
+
+* tested up to WP 3.9-alpha
+* settings page overhaul to better match WP 3.8 style
+* change version number format
+* change links 
 
 = 0.1.3 =
 

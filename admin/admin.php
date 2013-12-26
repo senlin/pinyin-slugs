@@ -17,15 +17,11 @@ function setPinyinSlugOptions() {
 
 <div class="wrap">
 
-	<div id="icon-options-general" class="icon32"></div>
-
 	<h2><?php _e( 'SO Pinyin Slugs Plugin Settings', 'so-pinyin-slugs' ); ?></h2>
 	
-	<div class="post-box-container column-1 normal" style="float:left;width:66%;">
-
-		<div id="pinyinslugs-intro" class="postbox" style="display:block;margin:30px 10px 10px 0;">
+		<div class="pinyinslugs-intro">
 			
-			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'Important Information', 'so-pinyin-slugs' ); ?></span></h3>
+			<h3 class="hndle"><span><?php _e( 'Important Information', 'so-pinyin-slugs' ); ?></span></h3>
 			
 			<div class="inside">
 	
@@ -41,11 +37,10 @@ function setPinyinSlugOptions() {
 			</div> <!-- end .inside -->
 	
 		</div> <!-- end .post-box -->
-		
 	
-		<div id="pinyinslugs-settings" class="postbox" style="margin:30px 10px 10px 0;">
+		<div class="pinyinslugs-settings">
 	
-			<h3 class="title hndle" style="padding:5px;"><span><?php _e( 'SO Pinyin Slugs - Slug Length', 'so-pinyin-slugs' ); ?></span></h3>
+			<h3 class="title hndle"><span><?php _e( 'SO Pinyin Slugs - Slug Length', 'so-pinyin-slugs' ); ?></span></h3>
 	
 			<div class="inside">
 	
@@ -75,20 +70,16 @@ function setPinyinSlugOptions() {
 		
 		</div> <!-- end .postbox -->
 	
-	</div> <!-- end .column-1 -->
+		<div class="rate-this-plugin">
 	
-	<div class="post-box-container column-2 side" style="float:right;width:32%;">
-
-		<div id="pinyinplugins-rate" class="postbox" style="margin:30px 10px 10px 0;">
-	
-			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'Rate the SO Pinyin Slugs plugin', 'so-pinyin-slugs' ); ?></span></h3>
+			<h3 class="hndle"<span><?php _e( 'Rate the SO Pinyin Slugs plugin', 'so-pinyin-slugs' ); ?></span></h3>
 	
 			<div class="inside">
 					
 				<?php 
 					
 					printf( '<p>' . __( 'If you have found this plugin useful, please give it a favourable rating in the %1$s and/or consider contributing to the plugin over at %2$s', 'so-pinyin-slugs' ), 
-							'<a href="' . esc_url( 'http://wordpress.org/plugins/so-pinyin-slugs/' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'so-pinyin-slugs' ) . '">' . __( 'WordPress Plugin Repository', 'so-pinyin-slugs' ) . '</a>',
+							'<a href="' . esc_url( 'http://wordpress.org/support/view/plugin-reviews/so-pinyin-slugs?rate=5#postform' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'so-pinyin-slugs' ) . '">' . __( 'WordPress Plugin Repository', 'so-pinyin-slugs' ) . '</a>',
 							'<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to SO Pinyin Slugs over at Github', 'so-pinyin-slugs' ) . '">' . __( 'Github', 'so-pinyin-slugs' ) . '</a>.'
 						. '</p>' );
 						
@@ -98,16 +89,16 @@ function setPinyinSlugOptions() {
 		
 		</div> <!-- end .postbox -->
 
-		<div id="pinyinplugins-support" class="postbox" style="margin:30px 10px 10px 0;">
+		<div class="pinyinplugins-support">
 	
-			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'Support', 'so-pinyin-slugs' ); ?></span></h3>
+			<h3 class="hndle"><span><?php _e( 'Support', 'so-pinyin-slugs' ); ?></span></h3>
 	
 			<div class="inside">
 					
 				<?php 
 	
 					echo '<p>'; printf( __( 'I will only support this plugin through %s. Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.<br /><br /><strong>PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS</strong><br /><br />Thank you for your understanding and cooperation.', 'so-pinyin-slugs' ),
-						'<strong><a href="' . esc_url( 'https://github.com/so-wp/so-pinyin-slugs/issues' ) . '" title="' . esc_attr__( 'Support via Github', 'so-pinyin-slugs' ) . '">' . __( 'Github', 'so-pinyin-slugs' ) . '</a></strong>'
+						'<strong><a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs/issues' ) . '" title="' . esc_attr__( 'Support via Github', 'so-pinyin-slugs' ) . '">' . __( 'Github', 'so-pinyin-slugs' ) . '</a></strong>'
 					); echo '</p>';
 					
 					?>
@@ -116,34 +107,34 @@ function setPinyinSlugOptions() {
 		
 		</div> <!-- end .postbox -->
 	
-		<div id="about-pinyinslugs" class="postbox" style="margin:30px 10px 10px 0;">
-	
-			<h3 class="hndle" style="padding:5px;"><span><?php _e( 'About the Author', 'so-pinyin-slugs' ); ?></span></h3>
-	
+		<div class="author postbox">
+			
+			<h3 class="hndle">
+				<span><?php _e( 'About the Author', 'so-pinyin-slugs' ); ?></span>
+			</h3>
+			
 			<div class="inside">
 				<img src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" style="float: left; margin-right: 10px; padding: 3px; border: 1px solid #DFDFDF;"/>
-				<p style="height: 60px; padding-top: 20px">
+				<p>
 					<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
-					esc_url( 'http://so-wp.github.io/' )
+					esc_url( 'http://so-wp.com' )
 					); ?>
 				</p>
 				
-				<ul style="clear: both; margin-top: 20px;">
+				<ul>
 					<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'so-pinyin-slugs'); ?></a></li>
 					<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-pinyin-slugs'); ?></a></li>
-					<li><a href="https://plus.google.com/108543145122756748887" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-pinyin-slugs' ); ?></a></li>
+					<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
-					<li><a href="http://twitter.com/SenlinOnline" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-pinyin-slugs' ); ?></a></li>
+					<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="http://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-pinyin-slugs' ); ?></a></li>
 				</ul>
 			
 			</div> <!-- end .inside -->
 		
-		</div> <!-- end .post-box -->
+		</div> <!-- end .postbox -->
 	
-	</div> <!-- end .column-2 -->
+	</div> <!-- end .wrap -->
 
-</div>
-<?php
-}
+<?php }

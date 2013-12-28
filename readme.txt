@@ -2,8 +2,8 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 3.6
-Tested up to: 3.8
-Stable tag: 2013.12.26
+Tested up to: WP 3.9-alpha
+Stable tag: 2013.12.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,10 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 2013.12.28 =
+
+* fix reported [bug](https://github.com/senlin/so-pinyin-slugs/issues/1) that causes entire admin to be a maximum width of 48rem
 
 = 2013.12.26 =
 

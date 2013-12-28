@@ -1,8 +1,8 @@
 # SO Pinyin Slugs
 
-###### Version 2013.12.26
+###### Version 2013.12.28
 ###### requires at least WordPress 3.6
-###### tested up to 3.8.1
+###### tested up to WP 3.9-alpha
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=17)
@@ -68,6 +68,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2013.12.28
+
+* fix reported [bug](https://github.com/senlin/so-pinyin-slugs/issues/1) that causes entire admin to be a maximum width of 48rem
 
 ### 2013.12.26
 

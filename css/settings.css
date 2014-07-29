@@ -1,0 +1,52 @@
+/**
+ * Settings Page styles
+ * 
+ * @since 2013.12.26
+ */
+.wrap > h2 {
+	background: url("../images/so-icon.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
+	padding-left: 40px;
+}
+.wrap .pinyinslugs-intro, .wrap #sops-settings {
+    max-width: 48rem;
+}
+hr {
+    color: #EFEFEF;
+}
+.rate-this-plugin {
+	color: #0074A2;
+	font-style: italic;
+	font-size: 16px;
+}
+.support {
+	font-size: 16px;
+}
+.author.postbox {
+	max-width: 500px;
+}
+.author.postbox .hndle {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.author.postbox .inside {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+}
+.author.postbox .inside .top {
+    min-height: 90px;
+}
+.author.postbox .inside > .top > .author-image {
+	border: 1px solid #DFDFDF;
+	float: left;
+	margin-right: 10px;
+	padding: 3px;
+}
+.author.postbox .inside > ul {
+	clear: both;
+}
+.author.postbox .inside li {
+    float: left;
+    width: 50%;
+}

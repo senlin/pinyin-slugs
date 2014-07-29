@@ -13,8 +13,13 @@ function getPinyinSlug( $strTitle ) {
 	global $dictPinyin;
 		
 	$strRet = '';
-
-	$PSL = get_option( 'PinyinSlug_length', 100 );
+	
+/*
+	$options = get_option( 'sosp_options' );
+	$PSL = $options['slug_length'];
+*/
+	
+	$PSL = get_option( 'slug_length', 100 );
 	
 	$origStrTitle = $strTitle; // Save the original title<-------------------------------------------
 	$containsChinese = false; // Setting a flag variable, the default is false, if the title contains Chinese characters it echoes true<-------------------

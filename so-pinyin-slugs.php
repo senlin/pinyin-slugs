@@ -206,7 +206,7 @@ register_uninstall_hook( __FILE__, 'sops_delete_plugin_options' );
 
 add_action( 'admin_menu', 'sops_add_options_page' );
 
-function dbfw_add_options_page() {
+function sops_add_options_page() {
 	// Add the new admin menu and page and save the returned hook suffix
 	$hook = add_options_page( 'SO Pinyin Slugs Settings', 'SO Pinyin Slugs', 'manage_options', __FILE__, 'sops_render_form' );
 	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded

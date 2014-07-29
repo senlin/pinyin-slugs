@@ -1,24 +1,15 @@
 <?php
 /**
- * A function for displaying messages in the admin.  It will wrap the message in the appropriate <div> with the 
- * custom class entered.  The updated class will be added if no $class is given.
- *
- * @since 0.1
- * @param $class string Class the <div> should have.
- * @param $message string The text that should be displayed.
+ * Render the Plugin options form
+ * @since 2014.07.29
  */
-function PinyinSlug_admin_message( $class = 'updated', $message = '' ) {
+function sops_render_form() { ?>
 
-	echo '<div class="' . ( !empty( $class ) ? esc_attr( $class ) : 'updated' ) . '"><p><strong>' . $message . '</strong></p></div>';
-}
-
-function setPinyinSlugOptions() {
-?>
-
-<div class="wrap">
-
-	<h2><?php _e( 'SO Pinyin Slugs Plugin Settings', 'so-pinyin-slugs' ); ?></h2>
-	
+	<div class="wrap">
+		
+		<!-- Display Plugin Header, and Description -->
+		<h2><?php _e( 'SO Pinyin Slugs Settings', 'so-pinyin-slugs' ); ?></h2>
+		
 		<div class="pinyinslugs-intro">
 			
 			<h3 class="hndle"><span><?php _e( 'Important Information', 'so-pinyin-slugs' ); ?></span></h3>
@@ -36,77 +27,62 @@ function setPinyinSlugOptions() {
 				<p><?php _e( 'A <strong>limitation of SO Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'so-pinyin-slugs' ); ?></p>
 			</div> <!-- end .inside -->
 	
-		</div> <!-- end .post-box -->
+		</div> <!-- end .pinyinslugs-intro -->
+			
+		<div id="sosp-settings">
 	
-		<div class="pinyinslugs-settings">
-	
-			<h3 class="title hndle"><span><?php _e( 'SO Pinyin Slugs - Slug Length', 'so-pinyin-slugs' ); ?></span></h3>
-	
-			<div class="inside">
-	
-				<form method="post" action="options.php">
+			<!-- Beginning of the Plugin Options Form -->
+			<form method="post" action="options.php">
 			
-					<?php wp_nonce_field( 'update-options' ); ?>
+				<?php settings_fields( 'sosp_plugin_options' ); ?>
+		
+				<?php $options = get_option( 'sosp_options' ); ?>
 			
-					<p><label for="PinyinSlug_length"><?php _e( 'Slug Length', 'so-pinyin-slugs' ); ?></label></p>
-			
-					<p><input name="PinyinSlug_length" type="text" id="PinyinSlug_length" value="<?php echo get_option( 'PinyinSlug_length',100 ); ?>" /></p>
-							
-					<p><?php _e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
-			
-					<input type="hidden" name="action" value="update" />
-			
-					<input type="hidden" name="page_options" value="PinyinSlug_length" />
-			
-					<p>
+				<table class="form-table"><tbody>
 						
-						<input type="submit" class="button-primary" value="<?php _e( ' Save Changes', 'so-pinyin-slugs' ); ?>" />
-					
-					</p>
-					
-				</form>
-			
-			</div><!--  end .inside -->
-		
-		</div> <!-- end .postbox -->
-	
-		<div class="rate-this-plugin">
-	
-			<h3 class="hndle"<span><?php _e( 'Rate the SO Pinyin Slugs plugin', 'so-pinyin-slugs' ); ?></span></h3>
-	
-			<div class="inside">
-					
-				<?php 
-					
-					printf( '<p>' . __( 'If you have found this plugin useful, please give it a favourable rating in the %1$s and/or consider contributing to the plugin over at %2$s', 'so-pinyin-slugs' ), 
-							'<a href="' . esc_url( 'http://wordpress.org/support/view/plugin-reviews/so-pinyin-slugs?rate=5#postform' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'so-pinyin-slugs' ) . '">' . __( 'WordPress Plugin Repository', 'so-pinyin-slugs' ) . '</a>',
-							'<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to SO Pinyin Slugs over at Github', 'so-pinyin-slugs' ) . '">' . __( 'Github', 'so-pinyin-slugs' ) . '</a>.'
-						. '</p>' );
+					<tr valign="top">
+						<th scope="row">
+							<label for="sosp-sluglength"><?php _e( 'Slug Length', 'so-pinyin-slugs' ); ?></label>
+						</th>
 						
-				?>
-
-			</div><!--  end .inside -->
-		
-		</div> <!-- end .postbox -->
-
-		<div class="pinyinplugins-support">
-	
-			<h3 class="hndle"><span><?php _e( 'Support', 'so-pinyin-slugs' ); ?></span></h3>
-	
-			<div class="inside">
+						<td>
+							<input name="sosp_options[slug_length]" type="text" id="sosp-title" class="regular-text" value="<?php echo $options['slug_length']; ?>" />
+							<p class="description"><?php _e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
+							<input type="hidden" name="action" value="update" />
+							<input type="hidden" name="page_options" value="<?php echo $options['slug_length']; ?>" />								
+						</td>
+					</tr>
 					
-				<?php 
-	
-					echo '<p>'; printf( __( 'I will only support this plugin through %s. Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.<br /><br /><strong>PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS</strong><br /><br />Thank you for your understanding and cooperation.', 'so-pinyin-slugs' ),
-						'<strong><a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs/issues' ) . '" title="' . esc_attr__( 'Support via Github', 'so-pinyin-slugs' ) . '">' . __( 'Github', 'so-pinyin-slugs' ) . '</a></strong>'
-					); echo '</p>';
+				</tbody></table> <!-- end .tbody end table -->
+				
+				<p class="submit">
 					
-					?>
-	
-			</div><!--  end .inside -->
+					<input type="submit" class="button-primary" value="<?php _e( 'Save Settings', 'so-pinyin-slugs' ) ?>" />
+				
+				</p>
+			
+			</form>
 		
-		</div> <!-- end .postbox -->
-	
+		</div><!-- #sosp-settings -->
+
+		<p class="rate-this-plugin">
+			<?php
+			/* Translators: 1 is link to WP Repo */
+			printf( __( 'If you have found this plugin at all useful, please give it a favourable rating in the <a href="%s" title="Rate this plugin!">WordPress Plugin Repository</a>.', 'so-pinyin-slugs' ), 
+				esc_url( 'http://wordpress.org/support/view/plugin-reviews/so-pinyin-slugs' )
+			);
+			?>
+		</p>
+
+		<p class="support">
+			<?php
+			/* Translators: 1 is link to Github Repo */
+			printf( __( 'If you have an issue with this plugin or want to leave a feature request, please note that I give <a href="%s" title="Support or Feature Requests via Github">support via Github</a> only.', 'so-pinyin-slugs' ), 
+				esc_url( 'https://github.com/senlin/so-pinyin-slugs/issues' )
+			);
+			?>
+		</p>
+		
 		<div class="author postbox">
 			
 			<h3 class="hndle">
@@ -114,16 +90,19 @@ function setPinyinSlugOptions() {
 			</h3>
 			
 			<div class="inside">
-				<img src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" style="float: left; margin-right: 10px; padding: 3px; border: 1px solid #DFDFDF;"/>
-				<p>
-					<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
-					esc_url( 'http://so-wp.com' )
-					); ?>
-				</p>
+				<div class="top">
+					<img class="author-image" src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
+					<p>
+						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
+							esc_url( 'http://so-wp.com' )
+						); ?>
+					</p>
+				</div> <!-- end .top -->
 				
 				<ul>
-					<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'so-pinyin-slugs'); ?></a></li>
-					<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-pinyin-slugs'); ?></a></li>
+					<li><a href="https://senlinonline.com/plus/" target="_blank" title="SO PLUS, Premium WordPress Plugins by Senlin Online"><?php _e( 'SO PLUS', 'so-pinyin-slugs' ); ?></a></li>
+					<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e( 'Senlin Online', 'so-pinyin-slugs' ); ?></a></li>
+					<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
 					<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-pinyin-slugs' ); ?></a></li>
@@ -134,7 +113,7 @@ function setPinyinSlugOptions() {
 			</div> <!-- end .inside -->
 		
 		</div> <!-- end .postbox -->
-	
+
 	</div> <!-- end .wrap -->
 
 <?php }

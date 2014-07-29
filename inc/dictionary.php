@@ -7,7 +7,7 @@
   * since version 0.1
   */
 
-$dictPinyin = array(
+return array(
 	'A'		=> '啊阿吖嗄锕',
 	'Ai'	=> '埃挨哎唉哀皑癌蔼矮艾碍爱隘捱嗳嫒瑷暧砹锿霭',
 	'An'	=> '鞍氨安俺按暗岸胺案谙埯揞庵桉铵鹌黯',
@@ -409,5 +409,3 @@ $dictPinyin = array(
 	'Zun'	=> '尊遵撙樽鳟',
 	'Zuo'	=> '昨左佐做作坐座阼唑嘬怍胙祚酢',
 );
-
-echo json_encode( $dictPinyin ); var_dump($dictPinyin);

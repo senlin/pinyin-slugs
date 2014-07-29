@@ -4,7 +4,7 @@ Plugin Name: SO Pinyin Slugs
 Plugin URI: http://so-wp.com/?p=17
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Author: Piet Bos
-Version: 2014.07.28
+Version: 2014.07.29
 Author URI: http://senlinonline.com
 Text Domain: so-pinyin-slugs
 Domain Path: /languages
@@ -121,7 +121,7 @@ class SOPS_Load {
 	 */
 	function init() {
 		
-		register_setting( 'sops_plugin_options', 'sops_options', 'sops_validate_options' );
+		register_setting( 'sops_plugin_options', 'sops_options', 'validate_field' );
 		
 	}
 
@@ -134,7 +134,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2014.07.28' );
+		define( 'SOPS_VERSION', '2014.07.29' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -201,7 +201,7 @@ $sops_load = new SOPS_Load();
  * Register activation/deactivation hooks
  * @since 2014.07.28
  */
-register_activation_hook( __FILE__, 'sops_add_defaults' ); 
+register_activation_hook( __FILE__, 'sops_add_default' ); 
 register_uninstall_hook( __FILE__, 'sops_delete_plugin_options' );
 
 add_action( 'admin_menu', 'sops_add_options_page' );
@@ -218,16 +218,21 @@ function sops_add_options_page() {
  * Define default option settings
  * @since 2014.07.28
  */
-function sops_add_defaults() {
+function sops_add_default() {
 	
-	$defaults = array(
-		'slug_length' => '100'
-	);
+	$tmp = get_option( 'sops_options' );
 	
-	update_option( 'sops_options', $defaults );
+	if ( ( ! is_array( $tmp ) ) ) {
+	
+		$default = array(
+			'slug_length' => '100'
+		);
+		
+		update_option( 'sops_options', $default );
+	
+	}
 		
 }
-
 
 /**
  * Delete options table entries ONLY when plugin deactivated AND deleted 
@@ -255,20 +260,21 @@ function sops_load_settings_style() {
  * Set-up Filter Hook
  * @since 2014.07.28
  */
+add_filter( 'sanitize_title', 'getPinyinSlug', 1 );
+ 
 add_filter( 'plugin_action_links', 'sops_plugin_action_links', 10, 2 );
 
 
 /**
  * Sanitize and validate input. Accepts an array, return a sanitized array.
- * @since 2014.07.28
+ * @since 2014.07.29
  */
-function sops_validate_options( $input ) {
+function validate_field( $data ) {
 
 	// strip html from textboxes
-	$input['slug_length'] =  wp_filter_nohtml_kses( $input['slug_length'] ); // Sanitize input (strip html tags, and escape characters)
+	$data['slug_length'] =  wp_filter_nohtml_kses( $data['slug_length'] ); // Sanitize input (strip html tags, and escape characters)
 
-	return $input;
-
+	return $data;
 }
 
 /**

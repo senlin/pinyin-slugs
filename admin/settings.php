@@ -29,24 +29,24 @@ function sops_render_form() { ?>
 	
 		</div> <!-- end .pinyinslugs-intro -->
 			
-		<div id="sosp-settings">
+		<div id="sops-settings">
 	
 			<!-- Beginning of the Plugin Options Form -->
 			<form method="post" action="options.php">
 			
-				<?php settings_fields( 'sosp_plugin_options' ); ?>
+				<?php settings_fields( 'sops_plugin_options' ); ?>
 		
-				<?php $options = get_option( 'sosp_options' ); ?>
+				<?php $options = get_option( 'sops_options' ); ?>
 			
 				<table class="form-table"><tbody>
 						
 					<tr valign="top">
 						<th scope="row">
-							<label for="sosp-sluglength"><?php _e( 'Slug Length', 'so-pinyin-slugs' ); ?></label>
+							<label for="sops-sluglength"><?php _e( 'Slug Length', 'so-pinyin-slugs' ); ?></label>
 						</th>
 						
 						<td>
-							<input name="sosp_options[slug_length]" type="text" id="sosp-title" class="regular-text" value="<?php echo $options['slug_length']; ?>" />
+							<input name="sops_options[slug_length]" type="number" id="slug_length" value="<?php echo $options['slug_length']; ?>" />
 							<p class="description"><?php _e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
 							<input type="hidden" name="action" value="update" />
 							<input type="hidden" name="page_options" value="<?php echo $options['slug_length']; ?>" />								
@@ -63,7 +63,7 @@ function sops_render_form() { ?>
 			
 			</form>
 		
-		</div><!-- #sosp-settings -->
+		</div><!-- #sops-settings -->
 
 		<p class="rate-this-plugin">
 			<?php

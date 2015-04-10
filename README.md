@@ -1,8 +1,8 @@
 # SO Pinyin Slugs
 
-###### Version 2014.07.29
-###### requires at least WordPress 3.8
-###### tested up to WP 4.0-beta-2
+###### Version 2015.04.09
+###### requires at least WordPress 4.0
+###### tested up to WP 4.2
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=17)
@@ -55,19 +55,21 @@ This repo is open to _any_ kind of contributions.
 
 ## Donations
 
-* Donate link: http://senl.in/PPd0na
+* Donate link: http://so-wp.com/donations/
 
 ## Connect with me through
 
 [Github](https://github.com/senlin) 
-
-[Google+](http://plus.google.com/+PietBos) 
 
 [WordPress](http://profiles.wordpress.org/senlin/) 
 
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2015.04.09
+
+* changed logos
 
 ### 2014.07.29
 

@@ -1,13 +1,13 @@
 === SO Pinyin Slugs ===
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
-Requires at least: 3.8
-Tested up to: WP 4.0-beta-2
-Stable tag: 2014.07.29
+Requires at least: 4.0
+Tested up to: WP 4.2
+Stable tag: 2015.04.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
+Transforms Chinese character titles into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 
 == Description ==
 
@@ -79,6 +79,11 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 2015.04.09 =
+
+* changed logos
+* new banner image for WP.org Repo by [Joschko Hammermann](https://unsplash.com/hmmrmnn)
 
 = 2014.07.29 =
 

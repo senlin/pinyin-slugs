@@ -4,14 +4,14 @@ Plugin Name: SO Pinyin Slugs
 Plugin URI: http://so-wp.com/?p=17
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Author: Piet Bos
-Version: 2014.07.29
+Version: 2015.04.09
 Author URI: http://senlinonline.com
 Text Domain: so-pinyin-slugs
 Domain Path: /languages
 */
 
 /**
- * Copyright 2014  Piet Bos  (email : piethfbos@gmail.com)
+ * Copyright 2014-2015  Piet Bos  (email : piet@so-wp.com)
  *
  * The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
@@ -40,7 +40,7 @@ Domain Path: /languages
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Version check; any WP version under 3.8 is not supported (if only to "force" users to stay up to date)
+ * Version check; any WP version under 4.0 is not supported (if only to "force" users to stay up to date)
  * 
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
@@ -53,7 +53,7 @@ if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
 
 function sops_min_wp_version() {
 	global $wp_version;
-	$require_wp = '3.8';
+	$require_wp = '4.0';
 	$update_url = get_admin_url( null, 'update-core.php' );
 
 	$errors = array();
@@ -134,7 +134,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2014.07.29' );
+		define( 'SOPS_VERSION', '2015.04.09' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

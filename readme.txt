@@ -2,7 +2,7 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 4.0
-Tested up to: WP 4.2
+Tested up to: WP 4.2.2
 Stable tag: 2015.04.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,7 +11,7 @@ Transforms Chinese character titles into a permalink friendly slug, showing piny
 
 == Description ==
 
-The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
+The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](https://wordpress.org/plugins/pinyin-permalink/) plugin by user [xiaole_tao](https://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
 
 The original plugin can basically only be used on Chinese only websites; as soon as you install it on a bi/multilingual site it messes up the slugs of the non-Chinese languages.
 
@@ -33,10 +33,6 @@ Thanks for your understanding and cooperation.
 == Installation ==
 
 = Wordpress =
-
-Quick installation: [Install now](http://coveredwebservices.com/wp-plugin-install/?plugin=so-pinyin-slugs) !
-
- &hellip; OR &hellip;
 
 Search for "SO Pinyin Slugs" and install with the **Plugins > Add New** back-end page.
 
@@ -80,22 +76,31 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 
 == Changelog ==
 
-= 2015.04.09 =
+= 2.0.2 =
 
+* date: 2015.06.19
+* revert to [semantic versioning](http://semver.org/)
+
+= 2.0.1 =
+
+* date: 2015.04.09
 * changed logos
 * new banner image for WP.org Repo by [Joschko Hammermann](https://unsplash.com/hmmrmnn)
 
-= 2014.07.29 =
+= 2.0.0 =
 
+* date: 2014.07.29
 * due to non-compatibility issues with WP 4.0, complete rewrite of the plugin from the ground up
 * bump minimum required WP version up to 3.8
 
-= 2013.12.28 =
+= 1.0.1 =
 
+* date: 2013.12.28
 * fix reported [bug](https://github.com/senlin/so-pinyin-slugs/issues/1) that causes entire admin to be a maximum width of 48rem
 
-= 2013.12.26 =
+= 1.0.0 =
 
+* date: 2013.12.26
 * tested up to WP 3.9-alpha
 * settings page overhaul to better match WP 3.8 style
 * change version number format

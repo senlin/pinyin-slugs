@@ -58,3 +58,4 @@ function getPinyinSlug( $strTitle ) {
 	
 	return $strRet;
 }
+

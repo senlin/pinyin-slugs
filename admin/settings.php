@@ -8,7 +8,7 @@ function sops_render_form() { ?>
 	<div class="wrap">
 		
 		<!-- Display Plugin Header, and Description -->
-		<h2><?php _e( 'SO Pinyin Slugs Settings', 'so-pinyin-slugs' ); ?></h2>
+		<h1><?php _e( 'SO Pinyin Slugs Settings', 'so-pinyin-slugs' ); ?></h1>
 		
 		<div class="pinyinslugs-intro">
 			

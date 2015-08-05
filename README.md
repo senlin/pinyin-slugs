@@ -1,8 +1,10 @@
 # SO Pinyin Slugs
 
-###### Last updated on 2015.06.19
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
+
+###### Last updated on 2015.08.05
 ###### requires at least WordPress 4.0
-###### tested up to WP 4.2.2
+###### tested up to WP 4.3
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=17)
@@ -67,31 +69,31 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### 2.0.2
+### 2.0.3 (2015.08.05)
 
-* date: 2015.06.19
+* changed header settings page to h1 (https://make.wordpress.org/plugins/2015/08/03/4-3-change-to-plugin-dashboard-pages/)
+* show 4.3 compatibility
+
+### 2.0.2 (2015.06.19)
+
 * revert to [semantic versioning](http://semver.org/)
 
-### 2.0.1
+### 2.0.1 (2015.04.09)
 
-* date: 2015.04.09
 * changed logos
 * new banner image for WP.org Repo by [Joschko Hammermann](https://unsplash.com/hmmrmnn)
 
-### 2.0.0
+### 2.0.0 (2014.07.29)
 
-* date: 2014.07.29
 * due to non-compatibility issues with WP 4.0, complete rewrite of the plugin from the ground up
 * bump minimum required WP version up to 3.8
 
-### 1.0.1
+### 1.0.1 (2013.12.28)
 
-* date: 2013.12.28
 * fix reported [bug](https://github.com/senlin/so-pinyin-slugs/issues/1) that causes entire admin to be a maximum width of 48rem
 
-### 1.0.0
+### 1.0.0 (2013.12.26)
 
-* date: 2013.12.26
 * tested up to WP 3.9-alpha
 * settings page overhaul to better match WP 3.8 style
 * change version number format

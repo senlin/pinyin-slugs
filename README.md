@@ -2,7 +2,7 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2015.08.05
+###### Last updated on 2015.08.12
 ###### requires at least WordPress 4.0
 ###### tested up to WP 4.3
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
@@ -68,6 +68,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2.0.4 (2015.08.07)
+
+* TWEAK: header settings page; only showed half logo after 2.0.3 update 
 
 ### 2.0.3 (2015.08.05)
 

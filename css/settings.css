@@ -4,8 +4,13 @@
  * @since 2013.12.26
  */
 .wrap > h1 {
-	background: url("../images/so-icon.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
-	padding-left: 40px;
+    background-image: url("../images/so-icon.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    min-height: 32px;
+    padding-left: 40px;
+    padding-top: 7px;
 }
 .wrap .pinyinslugs-intro, .wrap #sops-settings {
     max-width: 48rem;

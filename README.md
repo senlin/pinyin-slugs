@@ -4,7 +4,7 @@
 
 ###### Last updated on 2015.08.12
 ###### requires at least WordPress 4.0
-###### tested up to WP 4.3
+###### tested up to WP 4.4
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=17)

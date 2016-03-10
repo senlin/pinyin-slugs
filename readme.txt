@@ -2,8 +2,8 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 4.0
-Tested up to: WP 4.4
-Stable tag: 2.0.4
+Tested up to: WP 4.4.2
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,7 @@ Thanks for your understanding and cooperation.
 
 == Installation ==
 
-= Wordpress =
+= WordPress =
 
 Search for "SO Pinyin Slugs" and install with the **Plugins > Add New** back-end page.
 
@@ -52,7 +52,6 @@ Done!
 = Known Issues: =
 
 * SO Pinyin Slugs will not transform existing slugs
-* If the title contains both Chinese characters and alphanumeric characters (abc, 123, etc.) SO Pinyin Slugs will ignore the latter. So if these alphanumeric characters are important, you will need to add them manually to your slug.
 
 = Can I use this plugin also for Traditional Chinese? =
 
@@ -75,6 +74,10 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.1.0 (2016.03.10) =
+
+* fix to not ignore alphanumerical characters by [vanabel](https://github.com/vanabel), closes [issue #4](https://github.com/senlin/so-pinyin-slugs/issues/4)
 
 = 2.0.4 (2015.08.07) =
 

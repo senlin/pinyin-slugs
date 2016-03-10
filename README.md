@@ -2,9 +2,9 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2015.08.12
+###### Last updated on 2016.03.10
 ###### requires at least WordPress 4.0
-###### tested up to WP 4.4
+###### tested up to WP 4.4.2
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=17)
@@ -36,7 +36,6 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 ### Known Issues:
 
 * SO Pinyin Slugs will not transform existing slugs
-* If the title contains both Chinese characters and alphanumeric characters (abc, 123, etc.) SO Pinyin Slugs will ignore the latter. So if these alphanumeric characters are important, you will need to add them manually to your slug.
 
 ### Can I use this plugin also for Traditional Chinese?
 
@@ -68,6 +67,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2.1.0 (2016.03.10)
+
+* fix to not ignore alphanumerical characters by [vanabel](https://github.com/vanabel), closes [issue #4](https://github.com/senlin/so-pinyin-slugs/issues/4)
 
 ### 2.0.4 (2015.08.07)
 

@@ -47,8 +47,13 @@ function getPinyinSlug( $strTitle ) {
 				}
 			}
 		} else {
-			//non chinese characters will be ignored
-			$strRet .= preg_replace( "/[^A-Za-z0-9\-]/", '', chr( $byte1st ) );
+			/**
+			 * fix to not ignore alphanumerical characters
+			 * by [vanabel](https://github.com/vanabel)
+			 * 
+			 * @source: //github.com/senlin/so-pinyin-slugs/issues/4
+			 */
+			$strRet .= preg_replace( '/[^A-Za-z0-9\-]/', '$0', chr( $byte1st ) );
 		}
 	}
 

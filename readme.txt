@@ -2,8 +2,8 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 4.0
-Tested up to: WP 4.4.2
-Stable tag: 2.1.0
+Tested up to: WP 4.7
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ This fork has been adapted by my ex-colleague [Denis Cao](https://github.com/cao
 
 Chinese characters don't come out good in permalinks. Without the SO Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
 
-Search engines such as [Baidu](http://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores.
+Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores.
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option SO Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
@@ -65,7 +65,7 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 
 = WPML Compatible =
 
-The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](http://wpml.org/plugin/so-pinyin-slugs/).
+The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
 
 == Screenshots ==
 
@@ -74,6 +74,11 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.1.1 (2016.11.29) =
+
+* remove version check
+* tested up to WP 4.7
 
 = 2.1.0 (2016.03.10) =
 

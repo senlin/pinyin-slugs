@@ -2,12 +2,11 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2016.03.10
-###### requires at least WordPress 4.0
-###### tested up to WP 4.4.2
+###### Last updated on 2016.11.29
+###### tested up to WP 4.7
 ###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
-###### [Stable Version](http://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
-###### [Plugin homepage](http://so-wp.com/?p=17)
+###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
+###### [Plugin homepage](https://so-wp.com/?p=17)
 
 WordPress plugin that transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 
@@ -21,13 +20,13 @@ This fork has been adapted by my ex-colleague [Denis Cao](https://github.com/cao
 
 Chinese characters don't come out good in permalinks. Without the SO Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
 
-Search engines such as [Baidu](http://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores. 
+Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores. 
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option SO Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
 ## WPML Compatible
 
-The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](http://wpml.org/plugin/so-pinyin-slugs/).
+The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
 
 ![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")
 
@@ -56,17 +55,26 @@ This repo is open to _any_ kind of contributions.
 
 ## Donations
 
-* Donate link: http://so-wp.com/donations/
+* Donate link: https://so-wp.com/plugins/donations
 
 ## Connect with me through
 
+[Website](https://bohanintl.com)
+
+[Website](https://so-wp.com)
+
 [Github](https://github.com/senlin) 
+
+[LinkedIn](https://www.linkedin.com/in/pietbos) 
 
 [WordPress](https://profiles.wordpress.org/senlin/) 
 
-[Website](http://senlinonline.com)
-
 ## Changelog
+
+### 2.1.1 (2016.11.29)
+
+* remove version check
+* tested up to WP 4.7
 
 ### 2.1.0 (2016.03.10)
 

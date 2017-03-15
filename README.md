@@ -74,7 +74,7 @@ This repo is open to _any_ kind of contributions.
 ### 2.1.2
 
 * date: March 15, 2017
-* add sanitize_title filter once the file has been included as per [suggestion](github.com/senlin/so-pinyin-slugs/issues/6#issuecomment-284342159) of Polylang author [@Chouby](https://github.com/Chouby)
+* add sanitize_title filter once the file has been included as per [suggestion](https://github.com/senlin/so-pinyin-slugs/issues/6#issuecomment-284342159) of Polylang author [@Chouby](https://github.com/Chouby)
 * tidying up
 
 ### 2.1.1

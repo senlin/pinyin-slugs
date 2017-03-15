@@ -4,14 +4,14 @@ Plugin Name: SO Pinyin Slugs
 Plugin URI: https://so-wp.com/?p=17
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Author: SO WP
-Version: 2.1.1
+Version: 2.1.2
 Author URI: https://so-wp.com/plugins/
 Text Domain: so-pinyin-slugs
 Domain Path: /languages
 */
 
 /**
- * Copyright 2014-2016  Piet Bos  (email : piet@so-wp.com)
+ * Copyright 2014-2017  Piet Bos  (email : piet@so-wp.com)
  *
  * The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
@@ -54,19 +54,19 @@ class SOPS_Load {
 		$sops = new stdClass;
 
 		/* Set the init. */
-		add_action( 'admin_init', array( &$this, 'init' ), 1 );
+		add_action( 'admin_init', array( $this, 'init' ) );
 
 		/* Set the constants needed by the plugin. */
-		add_action( 'plugins_loaded', array( &$this, 'constants' ), 2 );
+		add_action( 'plugins_loaded', array( $this, 'constants' ) );
 
 		/* Internationalize the text strings used. */
-		add_action( 'plugins_loaded', array( &$this, 'i18n' ), 3 );
+		add_action( 'plugins_loaded', array( $this, 'i18n' ) );
 
 		/* Load the functions files. */
-		add_action( 'plugins_loaded', array( &$this, 'includes' ), 4 );
+		add_action( 'plugins_loaded', array( $this, 'includes' ) );
 
 		/* Load the admin files. */
-		add_action( 'plugins_loaded', array( &$this, 'admin' ), 5 );
+		add_action( 'plugins_loaded', array( $this, 'admin' ) );
 
 	}
 	
@@ -88,7 +88,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.1.1' );
+		define( 'SOPS_VERSION', '2.1.2' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -124,6 +124,9 @@ class SOPS_Load {
 
 		/* Load the plugin functions file. */
 		require_once( SOPS_INCLUDES . 'functions.php' );
+
+		/* add filter once the file has been included as per suggestion of Polylang Pro author - //github.com/senlin/so-pinyin-slugs/issues/6#issuecomment-284342159 */
+		add_filter( 'sanitize_title', 'getPinyinSlug', 1 );
 
 		/* Load the dictionary file. */
 		global $dictPinyin;
@@ -214,8 +217,6 @@ function sops_load_settings_style() {
  * Set-up Filter Hook
  * @since 2014.07.28
  */
-add_filter( 'sanitize_title', 'getPinyinSlug', 1 );
- 
 add_filter( 'plugin_action_links', 'sops_plugin_action_links', 10, 2 );
 
 

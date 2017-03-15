@@ -1,9 +1,9 @@
 === SO Pinyin Slugs ===
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
-Requires at least: 4.0
-Tested up to: WP 4.7
-Stable tag: 2.1.1
+Requires at least: 4.4
+Tested up to: WP 4.8
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,44 +75,59 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 
 == Changelog ==
 
-= 2.1.1 (2016.11.29) =
+= 2.1.2 =
 
+* date: March 15, 2017
+* add sanitize_title filter once the file has been included as per [suggestion](github.com/senlin/so-pinyin-slugs/issues/6#issuecomment-284342159) of Polylang author [@Chouby](https://github.com/Chouby)
+* tidying up
+
+= 2.1.1 =
+
+* date: November 29, 2016
 * remove version check
 * tested up to WP 4.7
 
-= 2.1.0 (2016.03.10) =
+= 2.1.0 =
 
+* date: March 10, 2016
 * fix to not ignore alphanumerical characters by [vanabel](https://github.com/vanabel), closes [issue #4](https://github.com/senlin/so-pinyin-slugs/issues/4)
 
-= 2.0.4 (2015.08.07) =
+= 2.0.4 =
 
+* date: August 7, 2015
 * TWEAK: header settings page; only showed half logo after 2.0.3 update 
 
-= 2.0.3 (2015.08.05) =
+= 2.0.3 =
 
+* date: August 5, 2015
 * changed header settings page to h1 (https://make.wordpress.org/plugins/2015/08/03/4-3-change-to-plugin-dashboard-pages/)
 * show 4.3 compatibility
 
-= 2.0.2 (2015.06.19) =
+= 2.0.2 =
 
+* date: June 19, 2015
 * revert to [semantic versioning](http://semver.org/)
 
-= 2.0.1 (2015.04.09) =
+= 2.0.1 =
 
+* date: April 9, 2015
 * changed logos
 * new banner image for WP.org Repo by [Joschko Hammermann](https://unsplash.com/hmmrmnn)
 
-= 2.0.0 (2014.07.29) =
+= 2.0.0 =
 
+* date: July 29, 2014
 * due to non-compatibility issues with WP 4.0, complete rewrite of the plugin from the ground up
 * bump minimum required WP version up to 3.8
 
-= 1.0.1 (2013.12.28) =
+= 1.0.1 =
 
+* date: December 28, 2013
 * fix reported [bug](https://github.com/senlin/so-pinyin-slugs/issues/1) that causes entire admin to be a maximum width of 48rem
 
-= 1.0.0 (2013.12.26) =
+= 1.0.0 =
 
+* date: December 26, 2013
 * tested up to WP 3.9-alpha
 * settings page overhaul to better match WP 3.8 style
 * change version number format

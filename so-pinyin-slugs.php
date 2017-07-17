@@ -22,7 +22,7 @@ Domain Path: /languages
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
  * published by the Free Software Foundation.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @since 2014.07.28
  */
 class SOPS_Load {
-	
+
 	function __construct() {
 
 		global $sops;
@@ -69,14 +69,14 @@ class SOPS_Load {
 		add_action( 'plugins_loaded', array( $this, 'admin' ) );
 
 	}
-	
+
 	/**
 	 * Init plugin options to white list our options
 	 */
 	function init() {
-		
+
 		register_setting( 'sops_plugin_options', 'sops_options', 'validate_field' );
-		
+
 	}
 
 
@@ -158,14 +158,14 @@ $sops_load = new SOPS_Load();
  * Register activation/deactivation hooks
  * @since 2014.07.28
  */
-register_activation_hook( __FILE__, 'sops_add_default' ); 
+register_activation_hook( __FILE__, 'sops_add_default' );
 register_uninstall_hook( __FILE__, 'sops_delete_plugin_options' );
 
 add_action( 'admin_menu', 'sops_add_options_page' );
 
 function sops_add_options_page() {
 	// Add the new admin menu and page and save the returned hook suffix
-	$hook = add_options_page( 'SO Pinyin Slugs Settings', 'SO Pinyin Slugs', 'manage_options', __FILE__, 'sops_render_form' );
+	$hook = add_options_page( __('SO Pinyin Slugs Settings', 'so-pinyin-slugs'), __('SO Pinyin Slugs', 'so-pinyin-slugs'), 'manage_options', __FILE__, 'sops_render_form' );
 	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
 	add_action( 'admin_print_styles-' . $hook , 'sops_load_settings_style' );
 }
@@ -176,27 +176,28 @@ function sops_add_options_page() {
  * @since 2014.07.28
  */
 function sops_add_default() {
-	
+
 	$tmp = get_option( 'sops_options' );
-	
+
 	if ( ( ! is_array( $tmp ) ) ) {
-	
+
 		$default = array(
-			'slug_length' => '100'
+			'slug_length' => '100',
+			'slug_glue' => '',
 		);
-		
+
 		update_option( 'sops_options', $default );
-	
+
 	}
-		
+
 }
 
 /**
- * Delete options table entries ONLY when plugin deactivated AND deleted 
+ * Delete options table entries ONLY when plugin deactivated AND deleted
  * @since 2014.07.28
  */
 function sops_delete_plugin_options() {
-	
+
 	delete_option( 'sops_options' );
 
 }
@@ -228,6 +229,7 @@ function validate_field( $data ) {
 
 	// strip html from textboxes
 	$data['slug_length'] =  wp_filter_nohtml_kses( $data['slug_length'] ); // Sanitize input (strip html tags, and escape characters)
+	$data['slug_glue'] =  str_replace( ' ', '', wp_filter_nohtml_kses( $data['slug_glue'] ) ); // Sanitize input (strip html tags, and escape characters)
 
 	return $data;
 }

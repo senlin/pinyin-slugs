@@ -29,6 +29,7 @@ function getPinyinSlug( $strTitle ) {
 	if ( $PSL>0 ) {
 		$strTitle=substr( $strTitle, 0, $PSL );
 	}
+	$last_is_safe = false;
 	for ( $i = 0; $i < strlen( $strTitle ); $i++ ) {
 		//Take 1 byte???
 		$byte1st = ord( substr( $strTitle, $i, 1 ) );

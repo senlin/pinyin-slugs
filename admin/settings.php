@@ -2,6 +2,7 @@
 /**
  * Render the Plugin options form
  * @since 2014.07.29
+ * @modified 2.1.3
  */
 function sops_render_form() { ?>
 
@@ -91,18 +92,18 @@ function sops_render_form() { ?>
 
 			<div class="inside">
 				<div class="top">
-					<img class="author-image" src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
+					<img class="author-image" src="<?php echo esc_url( plugins_url( 'so-pinyin-slugs/images/pietbos-80x80.jpg' ) ); ?>" alt="plugin author Pieter Bos" width="80" height="80" />
 					<p>
-						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
-							esc_url( 'https://so-wp.com/plugins/' )
+						<?php printf( __( 'Hi, my name is Pieter Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
+							esc_url( 'https://so-wp.com' )
 						); ?>
 					</p>
 				</div> <!-- end .top -->
 
 				<ul>
-						<li><a href="https://bohanintl.com/" target="_blank" title="BHI Consulting for Websites"><?php _e( 'BHI Consulting for Websites', 'so-pinyin-slugs' ); ?></a></li>
-						<li><a href="https://www.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
-						<li><a href="https://so-wp.com/" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-pinyin-slugs' ); ?></a></li>
+						<li><a href="https://bohanintl.com" target="_blank" title="BHI Consulting for Websites"><?php _e( 'BHI Consulting for Websites', 'so-pinyin-slugs' ); ?></a></li>
+						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
+						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://bohanintl.com/wptips" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-pinyin-slugs' ); ?></a></li>

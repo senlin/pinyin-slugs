@@ -2,9 +2,9 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2017.3.15
-###### tested up to WP 4.8
-###### Authors: [Piet Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
+###### Last updated on 2018.7.8
+###### tested up to WP 4.9.7
+###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/?p=17)
 
@@ -65,11 +65,16 @@ This repo is open to _any_ kind of contributions.
 
 [Github](https://github.com/senlin) 
 
-[LinkedIn](https://www.linkedin.com/in/pietbos) 
+[LinkedIn](https://www.linkedin.com/in/pieterbos83/) 
 
 [WordPress](https://profiles.wordpress.org/senlin/) 
 
 ## Changelog
+
+### 2.1.3
+
+* date: July 8, 2018
+* tested up to WP 4.9.7
 
 ### 2.1.2
 

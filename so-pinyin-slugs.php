@@ -4,14 +4,14 @@ Plugin Name: SO Pinyin Slugs
 Plugin URI: https://so-wp.com/?p=17
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Author: SO WP
-Version: 2.1.2
+Version: 2.1.3
 Author URI: https://so-wp.com/plugins/
 Text Domain: so-pinyin-slugs
 Domain Path: /languages
 */
 
 /**
- * Copyright 2014-2017  Piet Bos  (email : piet@so-wp.com)
+ * Copyright 2014-2018  Pieter Bos  (email : piet@so-wp.com)
  *
  * The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
@@ -22,7 +22,7 @@ Domain Path: /languages
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
  * published by the Free Software Foundation.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @since 2014.07.28
  */
 class SOPS_Load {
-	
+
 	function __construct() {
 
 		global $sops;
@@ -69,14 +69,14 @@ class SOPS_Load {
 		add_action( 'plugins_loaded', array( $this, 'admin' ) );
 
 	}
-	
+
 	/**
 	 * Init plugin options to white list our options
 	 */
 	function init() {
-		
+
 		register_setting( 'sops_plugin_options', 'sops_options', 'validate_field' );
-		
+
 	}
 
 
@@ -88,7 +88,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.1.2' );
+		define( 'SOPS_VERSION', '2.1.3' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -158,7 +158,7 @@ $sops_load = new SOPS_Load();
  * Register activation/deactivation hooks
  * @since 2014.07.28
  */
-register_activation_hook( __FILE__, 'sops_add_default' ); 
+register_activation_hook( __FILE__, 'sops_add_default' );
 register_uninstall_hook( __FILE__, 'sops_delete_plugin_options' );
 
 add_action( 'admin_menu', 'sops_add_options_page' );
@@ -176,27 +176,27 @@ function sops_add_options_page() {
  * @since 2014.07.28
  */
 function sops_add_default() {
-	
+
 	$tmp = get_option( 'sops_options' );
-	
+
 	if ( ( ! is_array( $tmp ) ) ) {
-	
+
 		$default = array(
 			'slug_length' => '100'
 		);
-		
+
 		update_option( 'sops_options', $default );
-	
+
 	}
-		
+
 }
 
 /**
- * Delete options table entries ONLY when plugin deactivated AND deleted 
+ * Delete options table entries ONLY when plugin deactivated AND deleted
  * @since 2014.07.28
  */
 function sops_delete_plugin_options() {
-	
+
 	delete_option( 'sops_options' );
 
 }

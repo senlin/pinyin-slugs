@@ -2,8 +2,8 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 4.4
-Tested up to: WP 4.8
-Stable tag: 2.1.2
+Tested up to: 4.9.7
+Stable tag: 2.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ The original plugin can basically only be used on Chinese only websites; as soon
 
 This fork has been adapted by my ex-colleague [Denis Cao](https://github.com/caoyongsheng) in such a way that the slugs of the non-Chinese language remain untouched and only the Chinese character slugs will be transformed into pinyin.
 
-Chinese characters don't come out good in permalinks. Without the SO Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
+Chinese characters don't come out good in permalinks. Without the SO Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*.
 
 Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores.
 
@@ -75,6 +75,11 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 
 == Changelog ==
 
+= 2.1.3 =
+
+* date: July 8, 2018
+* tested up to WP 4.9.7
+
 = 2.1.2 =
 
 * date: March 15, 2017
@@ -95,7 +100,7 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 = 2.0.4 =
 
 * date: August 7, 2015
-* TWEAK: header settings page; only showed half logo after 2.0.3 update 
+* TWEAK: header settings page; only showed half logo after 2.0.3 update
 
 = 2.0.3 =
 
@@ -131,15 +136,15 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 * tested up to WP 3.9-alpha
 * settings page overhaul to better match WP 3.8 style
 * change version number format
-* change links 
+* change links
 
 = 0.1.3 =
 
-* change text domain to prepare for language packs (via Otto - http://otto42.com/el) 
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el)
 
 = 0.1.2 =
 
-* compatible up to WordPress 3.7 
+* compatible up to WordPress 3.7
 * redo version check, min. requirement WordPress 3.6
 * change Github link
 * add Dutch language files

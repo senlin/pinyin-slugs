@@ -28,7 +28,7 @@ So instead of transforming "中国" into two separate words divided by a hyphen 
 
 The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
 
-![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")
+[![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")](https://wpml.org/plugin/so-pinyin-slugs/)
 
 ## Frequently Asked Questions
 

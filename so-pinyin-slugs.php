@@ -1,19 +1,19 @@
 <?php
 /*
-Plugin Name: SO Pinyin Slugs
-Plugin URI: https://so-wp.com/?p=17
+Plugin Name: Pinyin Slugs
+Plugin URI: https://so-wp.com/plugin/pinyin-slugs
 Description: Transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 Author: SO WP
-Version: 2.1.3
-Author URI: https://so-wp.com/plugins/
+Version: 2.1.4
+Author URI: https://so-wp.com
 Text Domain: so-pinyin-slugs
 Domain Path: /languages
 */
 
 /**
- * Copyright 2014-2018  Pieter Bos  (email : piet@so-wp.com)
+ * Copyright 2014-2018  Pieter Bos  (email : pieter@so-wp.com)
  *
- * The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
+ * The Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
  *
  * My ex-colleague [Denis Cao](https://github.com/caoyongsheng) has adapted the original plugin in such a way that when the plugin is used
@@ -88,7 +88,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.1.3' );
+		define( 'SOPS_VERSION', '2.1.4' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -165,7 +165,7 @@ add_action( 'admin_menu', 'sops_add_options_page' );
 
 function sops_add_options_page() {
 	// Add the new admin menu and page and save the returned hook suffix
-	$hook = add_options_page( 'SO Pinyin Slugs Settings', 'SO Pinyin Slugs', 'manage_options', __FILE__, 'sops_render_form' );
+	$hook = add_options_page( 'Pinyin Slugs Settings', 'Pinyin Slugs', 'manage_options', __FILE__, 'sops_render_form' );
 	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
 	add_action( 'admin_print_styles-' . $hook , 'sops_load_settings_style' );
 }

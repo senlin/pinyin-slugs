@@ -1,8 +1,8 @@
-# Copyright (C) 2013 SO Pinyin Slugs
-# This file is distributed under the same license as the SO Pinyin Slugs package.
+# Copyright (C) 2013 Pinyin Slugs
+# This file is distributed under the same license as the Pinyin Slugs package.
 msgid ""
 msgstr ""
-"Project-Id-Version: SO Pinyin Slugs 0.1.2\n"
+"Project-Id-Version: Pinyin Slugs 0.1.2\n"
 "Report-Msgid-Bugs-To: https://github.com/so-wp/so-pinyin-slugs/issues\n"
 "POT-Creation-Date: 2013-10-29 05:52:50+00:00\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: admin/admin.php:22
-msgid "SO Pinyin Slugs Plugin Settings"
+msgid "Pinyin Slugs Plugin Settings"
 msgstr ""
 
 #: admin/admin.php:28
@@ -22,13 +22,13 @@ msgstr ""
 
 #: admin/admin.php:32
 msgid ""
-"SO Pinyin Slugs automatically transforms Chinese character titles into "
+"Pinyin Slugs automatically transforms Chinese character titles into "
 "pinyin slugs."
 msgstr ""
 
 #: admin/admin.php:34
 msgid ""
-"SO Pinyin Slugs will only work for new slugs, not on existing slugs. You can "
+"Pinyin Slugs will only work for new slugs, not on existing slugs. You can "
 "choose to rewrite the slugs of existing permalinks manually."
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 
 #: admin/admin.php:40
 msgid ""
-"A <strong>limitation of SO Pinyin Slugs</strong> is that it completely "
+"A <strong>limitation of Pinyin Slugs</strong> is that it completely "
 "ignores anything other than Chinese characters in your slug. For example: if "
 "you have a product name with a number in it, then the plugin ignores this "
 "number. You will have to add that manually to the slug if needed. Likewise, "
@@ -59,7 +59,7 @@ msgid ""
 msgstr ""
 
 #: admin/admin.php:48
-msgid "SO Pinyin Slugs - Slug Length"
+msgid "Pinyin Slugs - Slug Length"
 msgstr ""
 
 #: admin/admin.php:56
@@ -78,7 +78,7 @@ msgid " Save Changes"
 msgstr ""
 
 #: admin/admin.php:84
-msgid "Rate the SO Pinyin Slugs plugin"
+msgid "Rate the Pinyin Slugs plugin"
 msgstr ""
 
 #: admin/admin.php:90
@@ -96,7 +96,7 @@ msgid "WordPress Plugin Repository"
 msgstr ""
 
 #: admin/admin.php:92
-msgid "Contribute to SO Pinyin Slugs over at Github"
+msgid "Contribute to Pinyin Slugs over at Github"
 msgstr ""
 
 #: admin/admin.php:92 admin/admin.php:110 admin/admin.php:137
@@ -163,7 +163,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "SO Pinyin Slugs"
+msgid "Pinyin Slugs"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

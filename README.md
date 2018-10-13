@@ -1,32 +1,32 @@
-# SO Pinyin Slugs
+# Pinyin Slugs
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2018.7.8
-###### tested up to WP 4.9.7
+###### Last updated on 2018.10.13
+###### tested up to WP 4.9.8
 ###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
-###### [Plugin homepage](https://so-wp.com/?p=17)
+###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
 
 WordPress plugin that transforms Chinese character titles (of Posts, Pages and all other content types that use slugs) into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
 
 ## Description
 
-The SO Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](https://wordpress.org/plugins/pinyin-permalink/) plugin by user [xiaole_tao](https://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
+The Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](https://wordpress.org/plugins/pinyin-permalink/) plugin by user [xiaole_tao](https://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
 
 The original plugin can basically only be used on Chinese only websites; as soon as you install it on a bi/multilingual site it messes up the slugs of the non-Chinese languages.
 
 This fork has been adapted by my ex-colleague [Denis Cao](https://github.com/caoyongsheng) in such a way that the slugs of the non-Chinese language remain untouched and only the Chinese character slugs will be transformed into pinyin.
 
-Chinese characters don't come out good in permalinks. Without the SO Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
+Chinese characters don't come out good in permalinks. Without the Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
 
 Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores. 
 
-So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option SO Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
+So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
 ## WPML Compatible
 
-The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
+The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
 
 ![WPML Certification of Compatibility.](assets/wpml-ready-badge.png "WPML Certification of Compatibility")
 
@@ -34,7 +34,7 @@ The SO Pinyin Slugs plugin has received the [WPML Certification of Compatibility
 
 ### Known Issues:
 
-* SO Pinyin Slugs will not transform existing slugs
+* Pinyin Slugs will not transform existing slugs
 
 ### Can I use this plugin also for Traditional Chinese?
 
@@ -42,7 +42,7 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 
 ### I have an issue with this plugin, where can I get support?
 
-Please open an issue here on [Github](https://github.com/senlin/so-pinyin-slugs/issues)
+Please open an issue here on [Github](https://github.com/senlin/pinyin-slugs/issues)
 
 ## Contributions
 
@@ -70,6 +70,11 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/) 
 
 ## Changelog
+
+### 2.1.4
+
+* date: October 13, 2018
+* tested up to WP 4.9.8
 
 ### 2.1.3
 

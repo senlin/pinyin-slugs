@@ -9,7 +9,7 @@ function sops_render_form() { ?>
 	<div class="wrap">
 
 		<!-- Display Plugin Header, and Description -->
-		<h1><?php _e( 'SO Pinyin Slugs Settings', 'so-pinyin-slugs' ); ?></h1>
+		<h1><?php _e( 'Pinyin Slugs Settings', 'so-pinyin-slugs' ); ?></h1>
 
 		<div class="pinyinslugs-intro">
 
@@ -17,15 +17,15 @@ function sops_render_form() { ?>
 
 			<div class="inside">
 
-				<p><?php _e( 'SO Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs.', 'so-pinyin-slugs' ); ?></p>
+				<p><?php _e( 'Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs.', 'so-pinyin-slugs' ); ?></p>
 
-				<p><?php _e( 'SO Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually.', 'so-pinyin-slugs' ); ?></p>
+				<p><?php _e( 'Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually.', 'so-pinyin-slugs' ); ?></p>
 
 				<p><?php _e( '<strong>Note:</strong> If you choose to manually rewrite the slugs of existing permalinks, then please keep in mind that the previous permalinks that have been indexed by search engines (like Google, Baidu) do not change automatically. This may impact your site ranking if you just leave it like that.', 'so-pinyin-slugs' ); ?></p>
 
 				<p><?php _e( 'In that case you might want to add 301 Permanent Redirects for those specific links to your .htaccess file.', 'so-pinyin-slugs' ); ?></p>
 
-				<p><?php _e( 'A <strong>limitation of SO Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'so-pinyin-slugs' ); ?></p>
+				<p><?php _e( 'A <strong>limitation of Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'so-pinyin-slugs' ); ?></p>
 			</div> <!-- end .inside -->
 
 		</div> <!-- end .pinyinslugs-intro -->
@@ -79,7 +79,7 @@ function sops_render_form() { ?>
 			<?php
 			/* Translators: 1 is link to Github Repo */
 			printf( __( 'If you have an issue with this plugin or want to leave a feature request, please note that I give <a href="%s" title="Support or Feature Requests via Github">support via Github</a> only.', 'so-pinyin-slugs' ),
-				esc_url( 'https://github.com/senlin/so-pinyin-slugs/issues' )
+				esc_url( 'https://github.com/senlin/pinyin-slugs/issues' )
 			);
 			?>
 		</p>

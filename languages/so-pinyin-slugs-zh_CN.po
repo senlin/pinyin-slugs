@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: SO Pinyin Slugs WordPress Plugin\n"
+"Project-Id-Version: Pinyin Slugs WordPress Plugin\n"
 "POT-Creation-Date: 2013-08-21 23:30+0800\n"
 "PO-Revision-Date: 2013-11-10 00:38+0800\n"
 "Last-Translator: Piet Bos <piet@senlinonline.com>\n"
@@ -64,10 +64,10 @@ msgid "Senlin Online, WordPress Consulting &amp; Coding and WPML specialist"
 msgstr "Senlin 在线，WordPress 咨询，开发，WPML专家"
 
 #
-# <?php _e( 'Piet has been developing websites since 2005 and working with WordPress since 2006. SO Pinyin Slugs is Piet\'s 5th plugin. You can find out more information about him via the following links:', 'pinyinslugs' ); ?>
+# <?php _e( 'Piet has been developing websites since 2005 and working with WordPress since 2006. Pinyin Slugs is Piet\'s 5th plugin. You can find out more information about him via the following links:', 'pinyinslugs' ); ?>
 #
 # wpml-name: a0df125007cf131b50eda67903c2773c
-msgid "Piet has been developing websites since 2005 and working with WordPress since 2006. SO Pinyin Slugs is Piet's 5th plugin. You can find out more information about him via the following links:"
+msgid "Piet has been developing websites since 2005 and working with WordPress since 2006. Pinyin Slugs is Piet's 5th plugin. You can find out more information about him via the following links:"
 msgstr "Piet从2005年开始开发网站，从2006年开始使用WordPress。SO 拼音链接是Piet的第五个WordPress插件。您可以通过下面的链接了解到更多关于Piet的信息。"
 
 # <h3 class="hndle" style="padding:5px;"><span><?php _e( 'About the Developer: Piet Bos', 'pinyinslugs' ); ?></span></h3>
@@ -83,10 +83,10 @@ msgid "Support"
 msgstr "支持"
 
 #
-# <h3 class="hndle" style="padding:5px;"><span><?php _e( 'Rate the SO Pinyin Slugs plugin', 'pinyinslugs' ); ?></span></h3>
+# <h3 class="hndle" style="padding:5px;"><span><?php _e( 'Rate the Pinyin Slugs plugin', 'pinyinslugs' ); ?></span></h3>
 #
 # wpml-name: 9d6b564d838516686727a9fa6a9a5ad8
-msgid "Rate the SO Pinyin Slugs plugin"
+msgid "Rate the Pinyin Slugs plugin"
 msgstr "为 SO 拼音链接插件评级"
 
 #
@@ -111,17 +111,17 @@ msgid "Slug Length"
 msgstr "拼音链接长度"
 
 #
-# <h3 class="title hndle" style="padding:5px;"><span><?php _e( 'SO Pinyin Slugs - Slug Length', 'pinyinslugs' ); ?></span></h3>
+# <h3 class="title hndle" style="padding:5px;"><span><?php _e( 'Pinyin Slugs - Slug Length', 'pinyinslugs' ); ?></span></h3>
 #
 # wpml-name: 6413285ea3cbe88abb4a24afcc4048fc
-msgid "SO Pinyin Slugs - Slug Length"
+msgid "Pinyin Slugs - Slug Length"
 msgstr "SO拼音链接 - 拼音链接长度"
 
 #
-# <p><?php _e( 'A <strong>limitation of SO Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'pinyinslugs' ); ?></p>
+# <p><?php _e( 'A <strong>limitation of Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'pinyinslugs' ); ?></p>
 # </div> <!-- end .inside -->
 # wpml-name: e11ad28d9aca3e20f0431670647e60d4
-msgid "A <strong>limitation of SO Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you're writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored."
+msgid "A <strong>limitation of Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you're writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored."
 msgstr "一个重要的 <strong>SO 拼音链接缺陷</strong>是，它会完全忽略非中文字符。比如，您有一个产品名称包含数字，那么拼音链接会忽略此数字。如果有必要，您需要手动的在链接中添加此数字。或者您的标题是中英文混合的，英文部分会被忽略掉。"
 
 #
@@ -139,17 +139,17 @@ msgid "<strong>Note:</strong> If you choose to manually rewrite the slugs of exi
 msgstr "<strong>注意：</strong> 如果您选择手动修改已生成的链接，请注意，之前的链接可能已经被搜索引擎收录（比如百度，谷歌），并不会自动修改。这将会降低您网站的评级。"
 
 #
-# <p><?php _e( 'SO Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually.', 'pinyinslugs' ); ?></p>
+# <p><?php _e( 'Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually.', 'pinyinslugs' ); ?></p>
 #
 # wpml-name: f4d346b1e1c7ee1dff2e1be18181cc27
-msgid "SO Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually."
+msgid "Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually."
 msgstr "SO拼音链接插件只转换新文章的链接，不会修改已经存在的拼音链接。您可以在文章链接处输入新标题并保存来生成新的拼音链接。"
 
 #
-# <p><?php _e( 'SO Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs.', 'pinyinslugs' ); ?></p>
+# <p><?php _e( 'Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs.', 'pinyinslugs' ); ?></p>
 #
 # wpml-name: 42668a3746f7d066848a24f43dda4670
-msgid "SO Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs."
+msgid "Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs."
 msgstr "SO拼音链接自动将中文字符标题转换成拼音链接"
 
 #
@@ -160,10 +160,10 @@ msgid "Important Information"
 msgstr "重要信息"
 
 #
-# <h2><?php _e( 'SO Pinyin Slugs Plugin Settings', 'pinyinslugs' ); ?></h2>
+# <h2><?php _e( 'Pinyin Slugs Plugin Settings', 'pinyinslugs' ); ?></h2>
 #
 # wpml-name: 052f02844d48a7e138c1aaf7014f9c84
-msgid "SO Pinyin Slugs Plugin Settings"
+msgid "Pinyin Slugs Plugin Settings"
 msgstr "SO拼音链接插件设置"
 
 # echo '<p>'; printf( __( 'I will only support this plugin through %s. Therefore, if you have any questions, need help and/or want to make a feature request, please open an issue over at Github. You can also browse through open and closed issues to find what you are looking for and perhaps even help others.<br /><br /><strong>PLEASE DO NOT POST YOUR ISSUES VIA THE WORDPRESS FORUMS</strong><br /><br />Thank you for your understanding and cooperation.', 'pinyinslugs' ),
@@ -174,15 +174,15 @@ msgid "Support via Github"
 msgstr "通过 Github 支持"
 
 # '<a href="' . esc_url( 'http://wordpress.org/plugins/so-pinyin-slugs/' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'pinyinslugs' ) . '">' . __( 'WordPress Plugin Repository', 'pinyinslugs' ) . '</a>',
-# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to SO Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
+# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
 # . '</p>' );
 # wpml-name: 7600af2411f32a29b4a16465903bd4a9
-msgid "Contribute to SO Pinyin Slugs over at Github"
+msgid "Contribute to Pinyin Slugs over at Github"
 msgstr "通过 Github 帮助改进 SO拼音链接"
 
 # printf( '<p>' . __( 'If you have found this plugin useful, please give it a favourable rating in the %1$s and/or consider contributing to the plugin over at %2$s', 'pinyinslugs' ),
 # '<a href="' . esc_url( 'http://wordpress.org/plugins/so-pinyin-slugs/' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'pinyinslugs' ) . '">' . __( 'WordPress Plugin Repository', 'pinyinslugs' ) . '</a>',
-# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to SO Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
+# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
 # wpml-name: 83a699677be92131f520b33b9ff3ee8a
 msgid "Rate this plugin!"
 msgstr "为插件评级！"
@@ -203,7 +203,7 @@ msgstr "Github"
 
 # printf( '<p>' . __( 'If you have found this plugin useful, please give it a favourable rating in the %1$s and/or consider contributing to the plugin over at %2$s', 'pinyinslugs' ),
 # '<a href="' . esc_url( 'http://wordpress.org/plugins/so-pinyin-slugs/' ) . '" title="' . esc_attr__( 'Rate this plugin!', 'pinyinslugs' ) . '">' . __( 'WordPress Plugin Repository', 'pinyinslugs' ) . '</a>',
-# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to SO Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
+# '<a href="' . esc_url( 'https://github.com/senlin/so-pinyin-slugs' ) . '" title="' . esc_attr__( 'Contribute to Pinyin Slugs over at Github', 'pinyinslugs' ) . '">' . __( 'Github', 'pinyinslugs' ) . '</a>.'
 # wpml-name: e7bf3af39ce20c21c2b78926b2afbd2f
 msgid "WordPress Plugin Repository"
 msgstr "WordPress 插件库"

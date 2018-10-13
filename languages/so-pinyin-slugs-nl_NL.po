@@ -1,8 +1,8 @@
-# Copyright (C) 2013 SO Pinyin Slugs
-# This file is distributed under the same license as the SO Pinyin Slugs package.
+# Copyright (C) 2013 Pinyin Slugs
+# This file is distributed under the same license as the Pinyin Slugs package.
 msgid ""
 msgstr ""
-"Project-Id-Version: SO Pinyin Slugs 0.1.2\n"
+"Project-Id-Version: Pinyin Slugs 0.1.2\n"
 "Report-Msgid-Bugs-To: https://github.com/so-wp/so-pinyin-slugs/issues\n"
 "POT-Creation-Date: 2013-10-29 05:52:50+00:00\n"
 "MIME-Version: 1.0\n"
@@ -13,20 +13,20 @@ msgstr ""
 "Language-Team: Dutch\n"
 
 #: admin/admin.php:22
-msgid "SO Pinyin Slugs Plugin Settings"
-msgstr "SO Pinyin Slugs Plugin Instellingen"
+msgid "Pinyin Slugs Plugin Settings"
+msgstr "Pinyin Slugs Plugin Instellingen"
 
 #: admin/admin.php:28
 msgid "Important Information"
 msgstr "Belangrijke Informatie"
 
 #: admin/admin.php:32
-msgid "SO Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs."
-msgstr "SO Pinyin Slugs wijzigt Chinese tekens in titels automatisch in pinyin slugs."
+msgid "Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs."
+msgstr "Pinyin Slugs wijzigt Chinese tekens in titels automatisch in pinyin slugs."
 
 #: admin/admin.php:34
-msgid "SO Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually."
-msgstr "SO Pinyin Slugs werkt alleen voor nieuwe slugs, niet voor bestaande slugs. Je kan ervoor kiezen handmatig de slugs van bestaande permalinks wijzigen."
+msgid "Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually."
+msgstr "Pinyin Slugs werkt alleen voor nieuwe slugs, niet voor bestaande slugs. Je kan ervoor kiezen handmatig de slugs van bestaande permalinks wijzigen."
 
 #: admin/admin.php:36
 msgid "<strong>Note:</strong> If you choose to manually rewrite the slugs of existing permalinks, then please keep in mind that the previous permalinks that have been indexed by search engines (like Google, Baidu) do not change automatically. This may impact your site ranking if you just leave it like that."
@@ -37,12 +37,12 @@ msgid "In that case you might want to add 301 Permanent Redirects for those spec
 msgstr "In dat geval zou je voor die specifieke links 301 Permanente Redirects toe kunnen voegen aan het .htaccess file. "
 
 #: admin/admin.php:40
-msgid "A <strong>limitation of SO Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you're writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored."
-msgstr "Een <strong>beperking van SO Pinyin Slugs</strong> is dat niet-Chinese tekens in de slug volledig genegeerd worden. Als voorbeeld: wanneer je een product naam hebt met een nummer erin, dan gaar de plugin voorbij aan dat nummer. Als het nodig is zal je dat nummer handmatig toe moeten voegen. Evenzo, wanneer je een Nederlandse titel maakt met Chinese tekens erin, negeert de plugin het Nederlands en zal de slug alleen het pinyin van de Chinese tekens laten zien."
+msgid "A <strong>limitation of Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you're writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored."
+msgstr "Een <strong>beperking van Pinyin Slugs</strong> is dat niet-Chinese tekens in de slug volledig genegeerd worden. Als voorbeeld: wanneer je een product naam hebt met een nummer erin, dan gaar de plugin voorbij aan dat nummer. Als het nodig is zal je dat nummer handmatig toe moeten voegen. Evenzo, wanneer je een Nederlandse titel maakt met Chinese tekens erin, negeert de plugin het Nederlands en zal de slug alleen het pinyin van de Chinese tekens laten zien."
 
 #: admin/admin.php:48
-msgid "SO Pinyin Slugs - Slug Length"
-msgstr "SO Pinyin Slugs - Slug Lengte"
+msgid "Pinyin Slugs - Slug Length"
+msgstr "Pinyin Slugs - Slug Lengte"
 
 #: admin/admin.php:56
 msgid "Slug Length"
@@ -57,8 +57,8 @@ msgid " Save Changes"
 msgstr "Wijzigingen opslaan"
 
 #: admin/admin.php:84
-msgid "Rate the SO Pinyin Slugs plugin"
-msgstr "Beoordeel de SO Pinyin Slugs plugin"
+msgid "Rate the Pinyin Slugs plugin"
+msgstr "Beoordeel de Pinyin Slugs plugin"
 
 #: admin/admin.php:90
 msgid "If you have found this plugin useful, please give it a favourable rating in the %1$s and/or consider contributing to the plugin over at %2$s"
@@ -73,8 +73,8 @@ msgid "WordPress Plugin Repository"
 msgstr "WordPress Plugin Repository"
 
 #: admin/admin.php:92
-msgid "Contribute to SO Pinyin Slugs over at Github"
-msgstr "Draag bij aan de ontwikkeling van SO Pinyin Slugs via Github"
+msgid "Contribute to Pinyin Slugs over at Github"
+msgstr "Draag bij aan de ontwikkeling van Pinyin Slugs via Github"
 
 #: admin/admin.php:92
 #: admin/admin.php:110
@@ -131,8 +131,8 @@ msgid "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p><
 msgstr "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> is gedeactiveerd.</p></div>"
 
 #. Plugin Name of the plugin/theme
-msgid "SO Pinyin Slugs"
-msgstr "SO Pinyin Slugs"
+msgid "Pinyin Slugs"
+msgstr "Pinyin Slugs"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/so-wp/so-pinyin-slugs"

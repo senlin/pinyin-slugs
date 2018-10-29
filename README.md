@@ -76,9 +76,9 @@ This repo is open to _any_ kind of contributions.
 
 ## Connect with me through
 
-[Website](https://bohanintl.com)
+[BHI Consulting for Websites](https://bohanintl.com)
 
-[Website](https://so-wp.com)
+[SO WP](https://so-wp.com)
 
 [Github](https://github.com/senlin) 
 
@@ -90,8 +90,9 @@ This repo is open to _any_ kind of contributions.
 
 ### 2.1.4
 
-* date: October 13, 2018
-* tested up to WP 4.9.8
+* date: October 29, 2018
+* tested up to WP 5.0
+* tested up to ClassicPress 1.0.0
 
 ### 2.1.3
 

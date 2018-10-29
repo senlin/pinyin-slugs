@@ -2,8 +2,9 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2018.10.13
-###### tested up to WP 4.9.8
+###### Last updated on 2018.10.29
+###### tested up to WP 5.0
+###### tested up to ClassicPress 1.0.0
 ###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -24,7 +25,15 @@ Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
-## WPML Compatible
+### Gutenberg Compatible
+
+Pinyin Slugs also works with the new WP editor (Gutenberg) although the slugs are only changed upon saving the post/page, not immediately. This has to do with the way this new editor works.
+
+### ClassicPress Compatible
+
+Because ClassicPress is forked on WP 4.9.8 the Pinyin Slugs plugin is automatically also compatible with ClassicPress.
+
+### WPML Compatible
 
 The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/so-pinyin-slugs/).
 
@@ -32,9 +41,17 @@ The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](h
 
 ## Frequently Asked Questions
 
-### Known Issues:
+### Does Pinyin Slugs work with Gutenberg?
 
-* Pinyin Slugs will not transform existing slugs
+Yes, it does (see above), although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits too.
+
+### Does Pinyin Slugs work with ClassicPress?
+
+Yes, it does (see above), as ClassicPress is forked on WP 4.9.8 the Pinyin Slugs plugin is automatically also compatible with ClassicPress.
+
+### Known Issues
+
+Pinyin Slugs will not transform existing slugs
 
 ### Can I use this plugin also for Traditional Chinese?
 

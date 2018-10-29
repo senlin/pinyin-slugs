@@ -2,7 +2,7 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese
 Requires at least: 4.4
-Tested up to: 4.9.8
+Tested up to: 5.0
 Stable tag: 2.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,6 +29,20 @@ I have decided to only support this plugin through [Github](https://github.com/s
 
 Thanks for your understanding and cooperation.
 
+== Other Notes ==
+
+= Gutenberg Compatible =
+
+Pinyin Slugs also works with the new WP editor (Gutenberg) although the slugs are only changed upon saving the post/page, not immediately. This has to do with the way this new editor works.
+
+= ClassicPress Compatible =
+
+Because ClassicPress is forked on WP 4.9.8 the Pinyin Slugs plugin is automatically also compatible with ClassicPress.
+
+= WPML Compatible =
+
+The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/pinyin-slugs/).
+
 
 == Installation ==
 
@@ -49,9 +63,17 @@ Done!
 
 == Frequently Asked Questions ==
 
-= Known Issues: =
+= Does Pinyin Slugs work with Gutenberg? =
 
-* Pinyin Slugs will not transform existing slugs
+Yes, it does (see above), although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits too.
+
+= Does Pinyin Slugs work with ClassicPress? =
+
+Yes, it does (see above), as ClassicPress is forked on WP 4.9.8 the Pinyin Slugs plugin is automatically also compatible with ClassicPress.
+
+= Known Issues =
+
+Pinyin Slugs will not auto-transform existing slugs, you will have to change them manually.
 
 = Can I use this plugin also for Traditional Chinese? =
 
@@ -60,12 +82,6 @@ No, the dictionary part of the plugin only contains Simplified Chinese. If you w
 = I have an issue with this plugin, where can I get support? =
 
 Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/issues), as **I will not use the support forums** here on WordPress.org
-
-== Other Notes ==
-
-= WPML Compatible =
-
-The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/pinyin-slugs/).
 
 == Screenshots ==
 
@@ -77,8 +93,8 @@ The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](h
 
 = 2.1.4 =
 
-* date: October 12, 2018
-* tested up to WP 4.9.8
+* date: October 29, 2018
+* tested up to WP 5.0
 * tested up to ClassicPress 1.0.0
 
 = 2.1.3 =

@@ -1,10 +1,10 @@
 # Pinyin Slugs
 
-[![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![ClassicPress tested on version 1.0.1](https://img.shields.io/badge/ClassicPress-1.0.1-03768e.svg?style=flat-round)](https://www.classicpress.net)
 
 ###### Last updated on 2018.10.29
-###### tested up to WP 5.0
-###### tested up to ClassicPress 1.0.0
+###### tested up to WP 5.2.2
+###### tested up to ClassicPress 1.0.1
 ###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)

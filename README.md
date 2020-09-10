@@ -2,9 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
 
-###### Last updated on 2018.10.29
-###### tested up to WP 5.0
-###### tested up to ClassicPress 1.0.0
+###### Last updated on August 1, 2020
+###### tested up to WP 5.4
 ###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -76,7 +75,7 @@ This repo is open to _any_ kind of contributions.
 
 ## Connect with me through
 
-[BHI Consulting for Websites](https://bohanintl.com)
+[BHI Localization for Websites](https://www.bhi-localization.com)
 
 [SO WP](https://so-wp.com)
 

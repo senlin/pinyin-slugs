@@ -1,9 +1,9 @@
 # Pinyin Slugs
 
-[![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs)
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![ClassicPress tested on version 1.0.1](https://img.shields.io/badge/ClassicPress-1.0.1-03768e.svg?style=flat-round)](https://www.classicpress.net)
 
 ###### Last updated on August 1, 2020
-###### tested up to WP 5.4
+###### tested up to WP 5.5
 ###### Authors: [Pieter Bos](https://github.com/senlin), [Denis Cao](https://github.com/caoyongsheng)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -18,9 +18,9 @@ The original plugin can basically only be used on Chinese only websites; as soon
 
 This fork has been adapted by my ex-colleague [Denis Cao](https://github.com/caoyongsheng) in such a way that the slugs of the non-Chinese language remain untouched and only the Chinese character slugs will be transformed into pinyin.
 
-Chinese characters don't come out good in permalinks. Without the Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*. 
+Chinese characters don't come out good in permalinks. Without the Pinyin Slugs plugin activated, the example post I made for the screenshot will get a slug like this: *%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e4%bc%98%e5%8c%96*. With the plugin the slug automatically becomes *sousuoyinqingyouhua*.
 
-Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores. 
+Search engines such as [Baidu](https://www.baidu.com) obviously cannot make much of the first slug, but they can handle pinyin perfectly, especially when it is written as one long string without hyphens or underscores.
 
 So instead of transforming "中国" into two separate words divided by a hyphen or an underscore (the original plugin has this as options), it is best transformed into "zhongguo". The only option Pinyin Slugs therefore has left is the length that you can limit to an x amount of letters. The default is 100, which should be plenty for most.
 
@@ -79,11 +79,11 @@ This repo is open to _any_ kind of contributions.
 
 [SO WP](https://so-wp.com)
 
-[Github](https://github.com/senlin) 
+[Github](https://github.com/senlin)
 
-[LinkedIn](https://www.linkedin.com/in/pieterbos83/) 
+[LinkedIn](https://www.linkedin.com/in/pieterbos83/)
 
-[WordPress](https://profiles.wordpress.org/senlin/) 
+[WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
 
@@ -118,7 +118,7 @@ This repo is open to _any_ kind of contributions.
 ### 2.0.4
 
 * date: August 7, 2015
-* TWEAK: header settings page; only showed half logo after 2.0.3 update 
+* TWEAK: header settings page; only showed half logo after 2.0.3 update
 
 ### 2.0.3
 
@@ -158,7 +158,7 @@ This repo is open to _any_ kind of contributions.
 
 ### 0.1.3
 
-* change text domain to prepare for language packs (via Otto - http://otto42.com/el) 
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el)
 
 ### 0.1.2
 

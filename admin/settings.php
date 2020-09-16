@@ -19,13 +19,14 @@ function sops_render_form() { ?>
 
 				<p><?php _e( 'Pinyin Slugs automatically transforms Chinese character titles into pinyin slugs.', 'so-pinyin-slugs' ); ?></p>
 
+				<p><?php _e( 'Since September 2020 the plugin accepts both Simplified and Traditional Chinese characters.', 'so-pinyin-slugs' ); ?></p>
+
 				<p><?php _e( 'Pinyin Slugs will only work for new slugs, not on existing slugs. You can choose to rewrite the slugs of existing permalinks manually.', 'so-pinyin-slugs' ); ?></p>
 
-				<p><?php _e( '<strong>Note:</strong> If you choose to manually rewrite the slugs of existing permalinks, then please keep in mind that the previous permalinks that have been indexed by search engines (like Google, Baidu) do not change automatically. This may impact your site ranking if you just leave it like that.', 'so-pinyin-slugs' ); ?></p>
+				<p><?php _e( '<strong>Note:</strong> If you choose to manually rewrite the slugs of existing permalinks, then please keep in mind that the previous permalinks that have been indexed by search engines (like Google, Baidu) do not change automatically. This may impact your site ranking.', 'so-pinyin-slugs' ); ?></p>
 
 				<p><?php _e( 'In that case you might want to add 301 Permanent Redirects for those specific links to your .htaccess file.', 'so-pinyin-slugs' ); ?></p>
 
-				<p><?php _e( 'A <strong>limitation of Pinyin Slugs</strong> is that it completely ignores anything other than Chinese characters in your slug. For example: if you have a product name with a number in it, then the plugin ignores this number. You will have to add that manually to the slug if needed. Likewise, if you\'re writing an English title and you combine it with some Chinese characters, the resulting slug will only contain the pinyin of those characters; in other words the English is completely ignored.', 'so-pinyin-slugs' ); ?></p>
 			</div> <!-- end .inside -->
 
 		</div> <!-- end .pinyinslugs-intro -->
@@ -92,7 +93,7 @@ function sops_render_form() { ?>
 
 			<div class="inside">
 				<div class="top">
-					<img class="author-image" src="<?php echo esc_url( plugins_url( 'so-pinyin-slugs/images/pietbos-80x80.jpg' ) ); ?>" alt="plugin author Pieter Bos" width="80" height="80" />
+					<img class="author-image" src="<?php echo esc_url( plugins_url( 'so-pinyin-slugs/images/pieterbos.jpg' ) ); ?>" alt="plugin author Pieter Bos" width="80" height="80" />
 					<p>
 						<?php printf( __( 'Hi, my name is Pieter Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-pinyin-slugs' ),
 							esc_url( 'https://so-wp.com' )
@@ -101,7 +102,7 @@ function sops_render_form() { ?>
 				</div> <!-- end .top -->
 
 				<ul>
-						<li><a href="https://bohanintl.com" target="_blank" title="BHI Consulting for Websites"><?php _e( 'BHI Consulting for Websites', 'so-pinyin-slugs' ); ?></a></li>
+						<li><a href="https://www.bhi-localization.com" target="_blank" title="BHI Consulting for Websites"><?php _e( 'BHI Localization for Websites', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-pinyin-slugs' ); ?></a></li>

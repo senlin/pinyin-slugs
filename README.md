@@ -87,6 +87,11 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 2.2.0
+
+* date: September 16, 2020
+* dictionary update: UniHan database using the kMandarin Reading field as pinyin phonetic keys (https://unicode.org/charts/unihan.html); with many thanks to [Yun-yu Shen @ujamer](https://github.com/senlin/pinyin-slugs/pull/16)
+
 ### 2.1.4
 
 * date: October 29, 2018

@@ -2,8 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on September 16, 2020
-###### tested up to WP 5.5
+###### Last updated on March 6, 2021
+###### tested up to WP 5.7
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)

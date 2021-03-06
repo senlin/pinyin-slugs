@@ -2,7 +2,7 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese, traditional, simplified
 Requires at least: 4.4
-Tested up to: 5.5
+Tested up to: 5.7
 Stable tag: 2.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

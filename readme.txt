@@ -2,12 +2,12 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese, traditional, simplified
 Requires at least: 4.4
-Tested up to: 5.7
-Stable tag: 2.2.0
+Tested up to: 6.0
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Transforms both Simplified and Traditional Chinese character titles into a permalink friendly slug, showing pinyin that can be read by humans and (Chinese) search engines alike.
+Transforms Simplified or Traditional Chinese character titles into Pinyin to create a permalink friendly slug.
 
 == Description ==
 
@@ -29,7 +29,7 @@ Thanks for your understanding and cooperation.
 
 = WPML Compatible =
 
-The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/pinyin-slugs/).
+The Pinyin Slugs plugin has received the [WPML Certification of Compatibility](https://wpml.org/plugin/pinyin-slugs/) and is featured on the WPML website with the article [How to Build a WordPress Website in China and Reach an International Audience](https://wpml.org/documentation/how-to-build-a-wordpress-site-in-china/).
 
 
 == Installation ==
@@ -78,6 +78,11 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.2.1 =
+
+* date: October 25, 2022
+* edits in readme files and on Settings page
 
 = 2.2.0 =
 

@@ -106,7 +106,6 @@ function sops_render_form() { ?>
 						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-pinyin-slugs' ); ?></a></li>
-						<li><a href="https://bohanintl.com/wptips" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-pinyin-slugs' ); ?></a></li>
 				</ul>
 

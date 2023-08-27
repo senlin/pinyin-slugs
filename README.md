@@ -2,8 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on October 25, 2022
-###### tested up to WP 6.x
+###### Last updated on August 27, 2023
+###### tested up to WP 6.3
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -38,7 +38,7 @@ Yes, since September 2020 the plugin also can transform Traditional Chinese slug
 
 ### Does Pinyin Slugs work with the WP block editor?
 
-Yes, it does, although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits too.
+Yes, it does, although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits.
 
 ### Known Issues
 
@@ -74,6 +74,11 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
+
+### 2.3.0
+
+* date: August 27, 2023
+* fix Slug Length function ([issue 19](https://github.com/senlin/pinyin-slugs/issues/19) thanks for reporting @zhouLife)
 
 ### 2.2.1
 
@@ -153,7 +158,7 @@ This repo is open to _any_ kind of contributions.
 * tested up to WP 3.9-alpha
 * settings page overhaul to better match WP 3.8 style
 * change version number format
-* change links  
+* change links
 
 ### 0.1.3
 

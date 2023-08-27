@@ -4,13 +4,13 @@ Plugin Name: Pinyin Slugs
 Plugin URI: https://so-wp.com/plugin/pinyin-slugs
 Description: Transforms Simplified or Traditional Chinese character titles into Pinyin to create a permalink friendly slug.
 Author: SO WP
-Version: 2.2.1
+Version: 2.3.0
 Author URI: https://so-wp.com
 Text Domain: so-pinyin-slugs
 */
 
 /**
- * Copyright 2014-2022  Pieter Bos  (email : pieter@so-wp.com)
+ * Copyright 2014-2023  Pieter Bos  (email : pieter@so-wp.com)
  *
  * The Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
@@ -84,7 +84,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.2.1' );
+		define( 'SOPS_VERSION', '2.3.0' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );

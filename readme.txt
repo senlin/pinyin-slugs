@@ -2,8 +2,8 @@
 Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese, traditional, simplified
 Requires at least: 4.4
-Tested up to: 6.0
-Stable tag: 2.2.1
+Tested up to: 6.3
+Stable tag: 2.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,7 +61,7 @@ Yes, since September 2020 the plugin also can transform Traditional Chinese slug
 
 = Does Pinyin Slugs work with the WP block editor? =
 
-Yes, it does, although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits too.
+Yes, it does, although one caveat is that to be able to see the change of slug, the post/page first needs to be saved. The same applies for edits.
 
 = Known Issues =
 
@@ -78,6 +78,11 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.3.0 =
+
+* date: August 27, 2023
+* fix Slug Length function ([issue 19](https://github.com/senlin/pinyin-slugs/issues/19) thanks for reporting @zhouLife)
 
 = 2.2.1 =
 

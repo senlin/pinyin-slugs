@@ -37,7 +37,7 @@ function getPinyinSlug( $strTitle ) {
 			//Find spelling in the dictionary; if it cannotfind the character, it will be ignored
 			foreach ( $dictPinyin as $pinyin=>$val ) {
 				if ( strpos( $val, $fullChar ) !== false ) {
-						$strRet .= $pinyin;
+						$strRet .= $pinyin."-";
 					break;
 				}
 			}

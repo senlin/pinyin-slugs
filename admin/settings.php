@@ -3,6 +3,7 @@
  * Render the Plugin options form
  * @since 2014.07.29
  * @modified 2.1.3
+ * @modified 2.3.1
  */
 function sops_render_form() { ?>
 
@@ -48,7 +49,8 @@ function sops_render_form() { ?>
 						</th>
 
 						<td>
-							<input name="sops_options[slug_length]" type="number" id="slug_length" value="<?php echo $options['slug_length']; ?>" />
+							<input name="sops_options[slug_length]" type="number" id="slug_length" value="<?php echo esc_attr($options['slug_length']); ?>" /> <!-- Escaping the slug_length Value -->
+
 							<p class="description"><?php _e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
 							<input type="hidden" name="action" value="update" />
 							<input type="hidden" name="page_options" value="<?php echo $options['slug_length']; ?>" />

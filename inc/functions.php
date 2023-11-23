@@ -6,9 +6,11 @@
   * and return the slug in Pinyin when true
   *
   * since version 2.0.0
+  * @modified 2.3.1
   */
 
 function getPinyinSlug( $strTitle ) {
+	$strTitle = sanitize_text_field( $strTitle ); // Sanitizing and Validating Input ($strTitle)
 	// Load Chinese character dictionary
 	global $dictPinyin;
 
@@ -56,6 +58,10 @@ function getPinyinSlug( $strTitle ) {
 		$strRet = $origStrTitle;
 	}
 
+	// Validate the output
+	$strRet = preg_replace('/[^A-Za-z0-9-_]/', '', $strRet);
+
+	// Return the sanitized slug
 	return $strRet;
 }
 

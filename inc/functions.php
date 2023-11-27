@@ -6,7 +6,7 @@
   * and return the slug in Pinyin when true
   *
   * since version 2.0.0
-  * @modified 2.3.1
+  * @modified 2.3.2
   */
 
 function getPinyinSlug( $strTitle ) {
@@ -58,10 +58,13 @@ function getPinyinSlug( $strTitle ) {
 		$strRet = $origStrTitle;
 	}
 
-	// Validate the output
+	// Replace spaces with hyphens
+	$strRet = str_replace(' ', '-', $strRet);
+
+	// Sanitize the slug: allow only alphanumeric, hyphens, and underscores
 	$strRet = preg_replace('/[^A-Za-z0-9-_]/', '', $strRet);
 
 	// Return the sanitized slug
 	return $strRet;
-}
 
+}

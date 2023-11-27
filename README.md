@@ -2,7 +2,7 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on November 23, 2023
+###### Last updated on November 27, 2023
 ###### tested up to WP 6.4
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
@@ -74,6 +74,11 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
+
+### 2.3.2
+
+* date: November 27, 2023
+* last security fix introduced problem where spaces in Title where no longer replaced by hyphens, this version brings back those hyphens ([issue 23](https://github.com/senlin/pinyin-slugs/issues/23) thanks for pointing it out @nhimthaoan)
 
 ### 2.3.1
 

@@ -3,7 +3,7 @@ Contributors: senlin
 Tags: pinyin, permalinks, slugs, Mandarin, Chinese, traditional, simplified
 Requires at least: 4.4
 Tested up to: 6.4
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,11 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.3.2 =
+
+* date: November 27, 2023
+* last security fix introduced problem where spaces in Title where no longer replaced by hyphens, this version brings back those hyphens ([issue 23](https://github.com/senlin/pinyin-slugs/issues/23) thanks for pointing it out @nhimthaoan)
 
 = 2.3.1 =
 

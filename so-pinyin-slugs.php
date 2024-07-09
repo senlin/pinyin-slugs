@@ -181,7 +181,7 @@ function sops_add_default() {
 			'slug_length' => '100'
 		);
 
-		update_option( 'sops_options', $default );
+		update_option( 'sops_options', $default, true );
 
 	}
 

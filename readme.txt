@@ -1,9 +1,9 @@
 === Pinyin Slugs ===
 Contributors: senlin
-Tags: pinyin, permalinks, slugs, Mandarin, Chinese, traditional, simplified
+Tags: pinyin, permalinks, slugs, Mandarin Chinese, traditional and simplified
 Requires at least: 4.4
-Tested up to: 6.4
-Stable tag: 2.3.2
+Tested up to: 6.6
+Stable tag: 2.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,13 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.3.3 =
+
+* date: July 9, 2024
+* add new $autoload parameter (WP 6.6)
+* tested up to WP 6.6
+* removed logo from Settings page
 
 = 2.3.2 =
 

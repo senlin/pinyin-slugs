@@ -2,8 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on November 27, 2023
-###### tested up to WP 6.4
+###### Last updated on July 9, 2024
+###### tested up to WP 6.6
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -74,6 +74,13 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
+
+### 2.3.3
+
+* date: July 9, 2024
+* add new $autoload parameter (WP 6.6)
+* tested up to WP 6.6
+* removed logo from Settings page
 
 ### 2.3.2
 

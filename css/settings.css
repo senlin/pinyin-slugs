@@ -1,20 +1,8 @@
 /**
  * Settings Page styles
- * 
+ *
  * @since 2013.12.26
  */
-.wrap > h1 {
-    background-image: url("../images/so-icon.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    display: block;
-    min-height: 32px;
-    padding-left: 40px;
-    padding-top: 7px;
-}
-.wrap .pinyinslugs-intro, .wrap #sops-settings {
-    max-width: 48rem;
-}
 hr {
     color: #EFEFEF;
 }

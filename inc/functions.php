@@ -22,7 +22,7 @@ function getPinyinSlug( $strTitle ) {
 		$PSL = $sops_option['slug_length'];
 	} else {
 	        sops_add_default();
-	
+
 	        $PSL = get_option('sops_options')['slug_length'];
 	}
 

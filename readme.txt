@@ -1,9 +1,9 @@
 === Pinyin Slugs ===
 Contributors: senlin
-Tags: pinyin, permalinks, slugs, Mandarin Chinese, traditional and simplified
+Tags: pinyin, permalinks, slugs, Chinese, Mandarin
 Requires at least: 4.4
-Tested up to: 6.6
-Stable tag: 2.3.3
+Tested up to: 6.7
+Stable tag: 2.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,12 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.3.4 =
+
+* date: March 11, 2025
+* fix [issue27](https://github.com/senlin/pinyin-slugs/issues/27) thanks for the PR @yabwee
+* tested up to WP 6.7
 
 = 2.3.3 =
 

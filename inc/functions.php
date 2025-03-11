@@ -16,7 +16,15 @@ function getPinyinSlug( $strTitle ) {
 
 	$strRet = '';
 
-	$PSL = get_option('sops_options')['slug_length'];
+	$sops_option = get_option('sops_options');
+
+	if (is_array($sops_option)) {
+		$PSL = $sops_option['slug_length'];
+	} else {
+	        sops_add_default();
+	
+	        $PSL = get_option('sops_options')['slug_length'];
+	}
 
 	$origStrTitle = $strTitle; // Save the original title
 	$containsChinese = false; // Setting a flag variable, the default is false, if the title contains Chinese characters it echoes true

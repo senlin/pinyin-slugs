@@ -9,7 +9,9 @@
   * @modified 2.3.2
   */
 
-function getPinyinSlug( $strTitle ) {
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+function sops_getPinyinSlug( $strTitle ) {
 	$strTitle = sanitize_text_field( $strTitle ); // Sanitizing and Validating Input ($strTitle)
 	// Load Chinese character dictionary
 	global $dictPinyin;

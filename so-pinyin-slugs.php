@@ -4,13 +4,15 @@ Plugin Name: Pinyin Slugs
 Plugin URI: https://so-wp.com/plugin/pinyin-slugs
 Description: Transforms Simplified or Traditional Chinese character titles into Pinyin to create a permalink friendly slug.
 Author: SO WP
-Version: 2.3.5
+Version: 2.3.6
 Author URI: https://so-wp.com
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: so-pinyin-slugs
 */
 
 /**
- * Copyright 2014-2025  Pieter Bos  (email : pieter@so-wp.com)
+ * Copyright 2014-2026  Pieter Bos  (email : pieter@so-wp.com)
  *
  * The Pinyin Slugs plugin is a fork of the original [Pinyin Permalinks](http://wordpress.org/plugins/pinyin-permalink/) plugin
  * by user [xiaole_tao](http://profiles.wordpress.org/xiaole_tao/) who has seemingly abandoned his plugin as he never responded to emails.
@@ -68,7 +70,7 @@ class SOPS_Load {
 	 */
 	function init() {
 
-		register_setting( 'sops_plugin_options', 'sops_options', 'validate_field' );
+		register_setting( 'sops_plugin_options', 'sops_options', 'sops_validate_field' );
 
 	}
 
@@ -81,7 +83,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.3.5' );
+		define( 'SOPS_VERSION', '2.3.6' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -108,11 +110,11 @@ class SOPS_Load {
 		require_once( SOPS_INCLUDES . 'functions.php' );
 
 		/* add filter once the file has been included as per suggestion of Polylang Pro author - //github.com/senlin/so-pinyin-slugs/issues/6#issuecomment-284342159 */
-		add_filter( 'sanitize_title', 'getPinyinSlug', 1 );
+		add_filter( 'sanitize_title', 'sops_getPinyinSlug', 1 );
 
 		/* Load the dictionary file. */
-		global $dictPinyin;
-		$dictPinyin = require_once( SOPS_INCLUDES . 'dictionary.php' );
+		global $sops_dictPinyin;
+		$sops_dictPinyin = require_once( SOPS_INCLUDES . 'dictionary.php' );
 
 	}
 
@@ -206,7 +208,7 @@ add_filter( 'plugin_action_links', 'sops_plugin_action_links', 10, 2 );
  * Sanitize and validate input. Accepts an array, return a sanitized array.
  * @since 2014.07.29
  */
-function validate_field( $data ) {
+function sops_validate_field( $data ) {
 
 	// strip html from textboxes
 	$data['slug_length'] =  wp_filter_nohtml_kses( $data['slug_length'] ); // Sanitize input (strip html tags, and escape characters)
@@ -221,7 +223,7 @@ function validate_field( $data ) {
 function sops_plugin_action_links( $links, $file ) {
 
 	if ( $file == plugin_basename( __FILE__ ) ) {
-		$sops_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-pinyin-slugs/so-pinyin-slugs.php">' . __( 'Settings', 'so-pinyin-slugs' ) . '</a>';
+		$sops_links = '<a href="' . esc_url( admin_url( 'options-general.php?page=so-pinyin-slugs/so-pinyin-slugs.php' ) ) . '">' . esc_html__( 'Settings', 'so-pinyin-slugs' ) . '</a>';
 		// make the 'Settings' link appear first
 		array_unshift( $links, $sops_links );
 	}

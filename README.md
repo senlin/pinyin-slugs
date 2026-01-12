@@ -75,6 +75,12 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 2.3.6
+
+* date: January 12, 2026
+* add escaping functions to output
+* tested up to WP 6.9
+
 ### 2.3.5
 
 * date: April 27, 2025

@@ -2,8 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on April 27, 2025
-###### tested up to WP 6.8
+###### Last updated on January 23, 2026
+###### tested up to WP 6.9
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -74,6 +74,11 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
+
+### 2.3.7
+
+* date: January 23, 2026
+* fix PHP 8+ warning by aligning pinyin dictionary global variable name [issue 31](https://github.com/senlin/pinyin-slugs/issues/31)
 
 ### 2.3.6
 

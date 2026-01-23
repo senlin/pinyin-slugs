@@ -3,7 +3,7 @@ Contributors: senlin
 Tags: pinyin, permalinks, slugs, Chinese, Mandarin
 Requires at least: 4.6
 Tested up to: 6.9
-Stable tag: 2.3.6
+Stable tag: 2.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,11 @@ Please open an issue over at [Github](https://github.com/senlin/so-pinyin-slugs/
 3. WPML Compatible
 
 == Changelog ==
+
+= 2.3.7 =
+
+* date: January 23, 2026
+* fix PHP 8+ warning by aligning pinyin dictionary global variable name [issue 31](https://github.com/senlin/pinyin-slugs/issues/31)
 
 = 2.3.6 =
 

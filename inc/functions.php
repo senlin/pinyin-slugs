@@ -7,6 +7,7 @@
   *
   * since version 2.0.0
   * @modified 2.3.2
+  * @modified 2.3.7
   */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -14,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function sops_getPinyinSlug( $strTitle ) {
 	$strTitle = sanitize_text_field( $strTitle ); // Sanitizing and Validating Input ($strTitle)
 	// Load Chinese character dictionary
-	global $dictPinyin;
+	global $sops_dictPinyin;
 
 	$strRet = '';
 
@@ -47,12 +48,14 @@ function sops_getPinyinSlug( $strTitle ) {
 			//Grab the whole character, UTF-8 is a 3-byte Chinese character
 			$fullChar = substr( $strTitle, $i, 3 ); $i+=2;
 			//Find spelling in the dictionary; if it cannotfind the character, it will be ignored
-			foreach ( $dictPinyin as $pinyin=>$val ) {
-				if ( strpos( $val, $fullChar ) !== false ) {
-						$strRet .= $pinyin;
-					break;
-				}
-			}
+			if ( ! empty( $sops_dictPinyin ) && is_array( $sops_dictPinyin ) ) {
+                foreach ( $sops_dictPinyin as $pinyin=>$val ) {
+				    if ( strpos( $val, $fullChar ) !== false ) {
+						    $strRet .= $pinyin;
+					    break;
+				    }
+			    }
+            }
 		} else {
 			/**
 			 * fix to not ignore alphanumerical characters

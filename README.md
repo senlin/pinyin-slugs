@@ -2,8 +2,8 @@
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-pinyin-slugs.svg)](https://wordpress.org/plugins/so-pinyin-slugs) [![WP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/wp-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest) [![PHP compatibility](https://plugintests.com/plugins/so-pinyin-slugs/php-badge.svg)](https://plugintests.com/plugins/so-pinyin-slugs/latest)
 
-###### Last updated on January 23, 2026
-###### tested up to WP 6.9
+###### Last updated on August 16, 2026
+###### tested up to WP 7.1
 ###### Authors: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-pinyin-slugs) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/pinyin-slugs)
@@ -74,6 +74,18 @@ This repo is open to _any_ kind of contributions.
 [WordPress](https://profiles.wordpress.org/senlin/)
 
 ## Changelog
+
+### 2.3.8
+
+* date: August 16, 2026
+* Fixed: replaced `__FILE__` with a plain text slug (`so-pinyin-slugs`) for the settings page, as using `__FILE__` for menu slugs risks exposing the filesystem structure (Plugin Check warning)
+* Fixed: updated the Settings link on the Plugins page to match the new page slug
+* Improved: the Settings link now hooks into `plugin_action_links_{plugin_file}` instead of the global `plugin_action_links` filter, so the callback no longer runs for every other plugin row
+* Improved: internationalised the page title and menu title of the settings page
+* Improved: removed obsolete hidden `action` and `page_options` form fields, which are already handled by `settings_fields()`
+* Improved: added a fallback value for the slug length field to prevent a PHP notice when the option is missing
+* Fixed: corrected the `for` attribute of the Slug Length label so it matches the input's `id`
+* tested up to WP 7.1
 
 ### 2.3.7
 
@@ -221,6 +233,12 @@ This repo is open to _any_ kind of contributions.
 ### 0.1
 
 * First stable release
+
+## Upgrade Notice
+
+### 2.3.8
+
+The settings page URL has changed from ?page=so-pinyin-slugs/so-pinyin-slugs.php to ?page=so-pinyin-slugs. Please update any bookmarks. Your settings are unaffected.
 
 ## Screenshots
 

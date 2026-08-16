@@ -48,18 +48,16 @@ function sops_render_form() { ?>
 				<table class="form-table"><tbody>
 
 					<tr valign="top">
-						<th scope="row">
-							<label for="sops-sluglength"><?php esc_html_e( 'Slug Length', 'so-pinyin-slugs' ); ?></label>
-						</th>
+                        <th scope="row">
+                            <label for="slug_length"><?php esc_html_e( 'Slug Length', 'so-pinyin-slugs' ); ?></label>
+                        </th>
 
-						<td>
-							<input name="sops_options[slug_length]" type="number" id="slug_length" value="<?php echo esc_attr($options['slug_length']); ?>" /> <!-- Escaping the slug_length Value -->
+                        <td>
+                            <input name="sops_options[slug_length]" type="number" id="slug_length" value="<?php echo esc_attr( $options['slug_length'] ?? '100' ); ?>" />
 
-							<p class="description"><?php esc_html_e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
-							<input type="hidden" name="action" value="update" />
-							<input type="hidden" name="page_options" value="<?php echo esc_attr( $options['slug_length'] ); ?>" />
-						</td>
-					</tr>
+                            <p class="description"><?php esc_html_e( 'By default the maximum slug length is set to 100 letters; anything over that limit will not be converted. If you want to change this limit, you can do that here.', 'so-pinyin-slugs' ); ?></p>
+                        </td>
+                    </tr>
 
 				</tbody></table> <!-- end .tbody end table -->
 
@@ -122,6 +120,7 @@ function sops_render_form() { ?>
 
 				<ul>
 						<li><a href="https://www.bhi-localization.com" target="_blank" title="BHI Consulting for Websites"><?php esc_html_e( 'BHI Localization for Websites', 'so-pinyin-slugs' ); ?></a></li>
+                        <li><a href="https://wpmlsupport.com" target="_blank" title="WPML Support"><?php esc_html_e( 'WPML Support', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php esc_html_e( 'LinkedIn', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php esc_html_e( 'SO WP', 'so-pinyin-slugs' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php esc_html_e( 'Github', 'so-pinyin-slugs' ); ?></a></li>

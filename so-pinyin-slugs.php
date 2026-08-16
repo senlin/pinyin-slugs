@@ -4,7 +4,7 @@ Plugin Name: Pinyin Slugs
 Plugin URI: https://so-wp.com/plugin/pinyin-slugs
 Description: Transforms Simplified or Traditional Chinese character titles into Pinyin to create a permalink friendly slug.
 Author: SO WP
-Version: 2.3.7
+Version: 2.3.8
 Author URI: https://so-wp.com
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -83,7 +83,7 @@ class SOPS_Load {
 	function constants() {
 
 		/* Set the version number of the plugin. */
-		define( 'SOPS_VERSION', '2.3.7' );
+		define( 'SOPS_VERSION', '2.3.8' );
 
 		/* Set constant path to the plugin directory. */
 		define( 'SOPS_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -148,10 +148,16 @@ register_uninstall_hook( __FILE__, 'sops_delete_plugin_options' );
 add_action( 'admin_menu', 'sops_add_options_page' );
 
 function sops_add_options_page() {
-	// Add the new admin menu and page and save the returned hook suffix
-	$hook = add_options_page( 'Pinyin Slugs Settings', 'Pinyin Slugs', 'manage_options', __FILE__, 'sops_render_form' );
-	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
-	add_action( 'admin_print_styles-' . $hook , 'sops_load_settings_style' );
+    // Add the new admin menu and page and save the returned hook suffix
+    $hook = add_options_page(
+        esc_html__( 'Pinyin Slugs Settings', 'so-pinyin-slugs' ),
+        esc_html__( 'Pinyin Slugs', 'so-pinyin-slugs' ),
+        'manage_options',
+        'so-pinyin-slugs',
+        'sops_render_form'
+    );
+    // Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
+    add_action( 'admin_print_styles-' . $hook , 'sops_load_settings_style' );
 }
 
 
@@ -200,6 +206,7 @@ function sops_load_settings_style() {
 /**
  * Set-up Filter Hook
  * @since 2014.07.28
+ * @edit 2026.08.16
  */
 add_filter( 'plugin_action_links', 'sops_plugin_action_links', 10, 2 );
 
@@ -219,16 +226,15 @@ function sops_validate_field( $data ) {
 /**
  * Display a Settings link on the main Plugins page
  * @since 2014.07.28
+ * @edit 2026.08.16
  */
-function sops_plugin_action_links( $links, $file ) {
+function sops_plugin_action_links( $links ) {
 
-	if ( $file == plugin_basename( __FILE__ ) ) {
-		$sops_links = '<a href="' . esc_url( admin_url( 'options-general.php?page=so-pinyin-slugs/so-pinyin-slugs.php' ) ) . '">' . esc_html__( 'Settings', 'so-pinyin-slugs' ) . '</a>';
-		// make the 'Settings' link appear first
-		array_unshift( $links, $sops_links );
-	}
+    $sops_links = '<a href="' . esc_url( admin_url( 'options-general.php?page=so-pinyin-slugs' ) ) . '">' . esc_html__( 'Settings', 'so-pinyin-slugs' ) . '</a>';
+    // make the 'Settings' link appear first
+    array_unshift( $links, $sops_links );
 
-	return $links;
+    return $links;
 }
 
 

@@ -75,6 +75,11 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 2.3.9
+
+* date: August 18, 2026
+* Fixed: Settings link on the Plugins page was conflicting with other plugins
+
 ### 2.3.8
 
 * date: August 16, 2026
